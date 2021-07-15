@@ -1,0 +1,93 @@
+a {
+  text-decoration: none;
+}
+
+h1 {
+    border-bottom: 1px solid #e8e8e8;
+    margin: 0 0 30px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #34373e;
+    font-weight: normal;
+    line-height: 1.2em;
+    font-family: 'Roboto',sans-serif !important;
+}
+
+#category {
+    font-family: 'Roboto',sans-serif !important;
+    font-weight: 500;
+}
+
+#title {
+  letter-spacing: 0.4px;
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 1.13636;
+}
+
+#banner {
+  margin: 20px;
+  height: 800px;
+}
+
+#editor {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.uk-navbar-container {
+    background: #fff !important;
+    font-family: 'Roboto',sans-serif !important;
+}
+
+img:hover {
+  opacity: 1;
+  transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.red-bg {
+    background: url(https://vistasadindia.com/image/red-bg.jpg) center no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+.features-14 .heading {
+    text-align: center;
+    color: #e2e1e1;
+    padding: 0px;
+    margin: 0;
+    border-bottom:none;
+}
+.aboutus {
+    background: #608bfd;
+}
+.aboutus:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-bottom: 80px solid #fff;
+        border-left: 80px solid #c4161c;
+        width: 0;
+    }
+.list-style ul {
+    color: white;
+    padding: 20px;
+    font-size: 17px;
+    
+}
+.list-style {
+    text-align: center;
+}
+    .list-style h3 {
+        padding: 10px;
+        color: black;
+        padding-bottom: 0px;
+        font-size:2rem!important;
+}
+    p {
+        text-align:justify;
+    }
+.uk-section h1 {
+    margin-top:20px;
+}
