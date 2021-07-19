@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Query from "../Query";
 import GLOBAL_QUERY from "../../queries/global/global";
 
-const banner = () => {
+const Banner = () => {
     return (
         <Query query={GLOBAL_QUERY} id={null}>
             {({ data: { global } }) => {
@@ -31,4 +31,4 @@ const banner = () => {
     )
 }
 
-export default banner;
+export default Banner;
