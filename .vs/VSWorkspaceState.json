@@ -1,6 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\public",
+    "\\src",
+    "\\src\\assets",
+    "\\src\\components",
+    "\\src\\components\\About",
+    "\\src\\components\\Footer",
+    "\\src\\containers",
+    "\\src\\containers\\App"
   ],
+  "SelectedNode": "\\src\\components\\Footer\\index.js",
   "PreviewInSolutionExplorer": false
 }

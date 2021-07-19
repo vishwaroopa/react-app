@@ -17,13 +17,8 @@ import Banner from '../../components/banner'
 import  Testimonials  from '../../components/Testimonials'
 import Footer  from '../../components/Footer'
 import Clients  from '../../components/Team'
-import JsonData from '../../data/data.json'
 
 function App() {
-    const [landingPageData, setLandingPageData] = useState({})
-    useEffect(() => {
-        setLandingPageData(JsonData)
-    }, [])
   return (
     <div className="App">
           <Nav />

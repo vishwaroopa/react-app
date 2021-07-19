@@ -47,7 +47,7 @@ img:hover {
   transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 .red-bg {
-    background: url(https://vistasadindia.com/image/red-bg.jpg) center no-repeat;
+    background: url(https://res.cloudinary.com/mavin-infotech/image/upload/v1626694329/red_bg_b5b220571d.jpg) center no-repeat;
     background-size: cover;
     padding: 50px 0;
 }
