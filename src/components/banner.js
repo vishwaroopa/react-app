@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from 'react'
 import { Link } from "react-router-dom";
-import logo from '../../assets/logo.png';
 import Query from "../Query";
 import GLOBAL_QUERY from "../../queries/global/global";
 
