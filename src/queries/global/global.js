@@ -18,12 +18,6 @@ email
 copyright
 content
 }
-banner1 {
-title
-image {
-url
-}
-}
     }
   }
 `;

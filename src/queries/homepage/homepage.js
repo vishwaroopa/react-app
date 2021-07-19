@@ -19,6 +19,12 @@ id
 title
 description
 }
+banner1 {
+title
+image {
+url
+}
+}
     }
   }
 `;
