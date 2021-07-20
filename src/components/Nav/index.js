@@ -8,7 +8,6 @@ import CATEGORY_ARTICLES_QUERY from "../../queries/category/articles";
 import CATEGORIES_QUERY from "../../queries/category/categories";
 import GLOBAL_QUERY from "../../queries/global/global";
 import logo from '../../assets/logo.png';
-import Menus from "../Menus";
 
 const Nav = () => {
     return (
