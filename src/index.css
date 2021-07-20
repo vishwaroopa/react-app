@@ -124,7 +124,7 @@ img:hover {
     }
 
     .navbar .nav-item .dropdown-menu {
-        margin-top: 3px;
+        margin-top: 1px;
         min-width: 260px;
     }
 }
