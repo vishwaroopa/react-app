@@ -5,6 +5,19 @@ const CATEGORIES_QUERY = gql`
     categories {
     slug
     name
+articles {
+        slug
+        title
+        content
+        image {
+          url
+        }
+        category {
+          slug
+          name
+        }
+      }
+
   }
 }
 
