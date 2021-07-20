@@ -128,3 +128,22 @@ img:hover {
         min-width: 260px;
     }
 }
+.carousel-inner .item_sub {
+    height: 550px !important;
+}
+
+.carousel-caption {
+    right: 10% !important;
+    left: 10% !important;
+    padding-bottom: 10px !important;
+}
+
+    .carousel-caption ul li {
+        font-size: 16px;
+        text-align: left;
+        list-style-type: circle;
+    }
+
+    .carousel-caption ul {
+        margin-left: 15%;
+    }
