@@ -27,14 +27,25 @@ h1 {
 }
 
 #banner {
-  margin: 20px;
-  height: 800px;
+  
+  height: 250px;
+}
+.uk-container-small ul {
+    list-style-type: circle;
+    /* color: #5e9efc; */
+    font-weight: 550;
+}
+@media (min-width: 960px) {
+    .uk-section {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
 }
 
 #editor {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.75;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75;
 }
 
 .uk-navbar-container {
