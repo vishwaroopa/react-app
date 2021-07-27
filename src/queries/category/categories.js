@@ -2,13 +2,9 @@ import gql from "graphql-tag";
 
 const CATEGORIES_QUERY = gql`
   query Categories {
-    categories {
+    categories(order_by: {name: asc}) {
     slug
     name
-sort{
-    field:id,
-    order:ASC
-}
 articles {
         slug
         title
