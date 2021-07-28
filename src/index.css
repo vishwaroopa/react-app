@@ -168,3 +168,26 @@ img:hover {
     color: #627aff;
     font-size: 30px;
 }
+.contact-item .fa {
+    font-weight: 700;
+    color: #627aff;
+}
+
+#contacts h4 {
+    color: #627aff;
+    margin-top: -10px;
+    font-size: 17px;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+#contacts iframe {
+    width: 100%;
+}
+
+.dashed-item {
+    margin-bottom: 20px !important;
+    border-bottom: 1px dashed #627aff;
+}

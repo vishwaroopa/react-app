@@ -17,6 +17,7 @@ import Banner from '../../components/Banner'
 import  Testimonials  from '../../components/Testimonials'
 import Footer  from '../../components/Footer'
 import Clients  from '../../components/Team'
+import { Contact } from '../../components/Contact'
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
           <Route path="/" component={Clients} exact />
           <Route path="/" component={Testimonials} exact />
       <Switch>
-            
+              <Route path="/category/contact-us" component={Contact} exact />
+              <Route path="/article/contact-us" component={Contact} exact />
         <Route path="/article/:id" component={Article} exact />
               <Route path="/category/:id" component={Category} exact />
              
