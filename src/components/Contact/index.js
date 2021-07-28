@@ -36,7 +36,7 @@ export const Contact = (props) => {
                             </div>
                             <form name='sentMessage' validate >
                                 <div className='row'>
-                                    <div className='col-md-6'>
+                                    <div className='col-md-12'>
                                         <div className='form-group'>
                                             <input
                                                 type='text'
@@ -50,7 +50,7 @@ export const Contact = (props) => {
                                             <p className='help-block text-danger'></p>
                                         </div>
                                     </div>
-                                    <div className='col-md-6'>
+                                    <div className='col-md-12'>
                                         <div className='form-group'>
                                             <input
                                                 type='email'
@@ -58,6 +58,20 @@ export const Contact = (props) => {
                                                 name='email'
                                                 className='form-control'
                                                 placeholder='Your E-mail Address'
+                                                required
+                                                onChange={handleChange}
+                                            />
+                                            <p className='help-block text-danger'></p>
+                                        </div>
+                                    </div>
+                                    <div className='col-md-12'>
+                                        <div className='form-group'>
+                                            <input
+                                                type='text'
+                                                id='subject'
+                                                name='subject'
+                                                className='form-control'
+                                                placeholder='Subject'
                                                 required
                                                 onChange={handleChange}
                                             />
