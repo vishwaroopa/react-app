@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
-    "\\public\\img",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\About",
-    "\\src\\components\\Nav",
-    "\\src\\components\\Services",
+    "\\src\\components\\Contact",
+    "\\src\\components\\Footer",
     "\\src\\containers",
-    "\\src\\queries"
+    "\\src\\containers\\App",
+    "\\src\\queries",
+    "\\src\\queries\\category",
+    "\\src\\utils"
   ],
-  "SelectedNode": "\\src\\components\\Nav\\index.js",
+  "SelectedNode": "\\src\\components\\Contact\\index.js",
   "PreviewInSolutionExplorer": false
 }
