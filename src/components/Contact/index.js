@@ -244,7 +244,7 @@ export const Contact = (props) => {
 
 
                         <h3>Links</h3>
-                        <div className='row'>
+                        <div className='row' id="contact">
                             <div className='social'>
                                 <ul>
                                     <li>
