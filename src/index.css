@@ -194,3 +194,14 @@ img:hover {
 #contacts {
     margin-top: 80px;
 }
+#contacts #contact .social i.fa {
+        border: 2px solid #1e6ea6!important;
+        color: #1e6ea6!important;
+    }
+    #contacts #contact {
+        BACKGROUND: NONE !important;
+        PADDING: 0PX !important;
+    }
+        #contacts #contact .social {
+            padding-top: 0px !important;
+        }
