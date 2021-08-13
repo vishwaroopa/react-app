@@ -2,15 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\components",
     "\\src\\components\\Contact",
     "\\src\\components\\Footer",
-    "\\src\\containers",
     "\\src\\containers\\App",
-    "\\src\\queries",
-    "\\src\\queries\\category",
-    "\\src\\utils"
+    "\\src\\queries\\category"
   ],
-  "SelectedNode": "\\src\\components\\Contact\\index.js",
+  "SelectedNode": "\\src\\queries",
   "PreviewInSolutionExplorer": false
 }

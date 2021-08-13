@@ -215,33 +215,6 @@ export const Contact = (props) => {
                                     </span>
                             </p>
                         </div>
-                        <p className='dashed-item'></p>
-                        <h4> Kenya Office:</h4>
-                        <div className='contact-item'>
-                            <p>
-                                <span>
-                                    T.Veera Chary
-                                    </span>
-                            </p>
-                        </div>
-                        <div className='contact-item'>
-                            <p>
-                                <span>
-                                    <i className='fa fa-map-marker'></i> Flat No:5, Natasha Apartments, South 'E', Nairobi, Kenya.<br />
-
-                                </span>
-                            </p>
-                        </div>
-                        <div className='contact-item'>
-                            <p>
-                                <span>
-                                    <i className='fa fa-fax'></i> +254 734 800010<br />
-                                </span>
-                            </p>
-                        </div>
-
-
-
 
                         <h3>Links</h3>
                         <div className='row' id="contact">
