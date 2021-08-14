@@ -10,7 +10,7 @@ const Jobs = () => {
                     <div id='testimonials'>
                         <div className='container'>
                             <div className='section-title text-center'>
-                                <h2>What our clients say</h2>
+                                <h2>JOBS</h2>
                             </div>
                             <div className='row'>
                                 {jobs.map((job, i) => {
