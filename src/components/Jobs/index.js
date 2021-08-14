@@ -23,7 +23,7 @@ const Jobs = () => {
 
                                                     <div className='testimonial-meta'> <h4>{job.jobtype} </h4></div>
                                                     <Link to={`/jobs/${job.slug}`} className="uk-link-reset">
-                                                        <div className='testimonial-meta'> <h1>{job.tit} </h1></div>
+                                                        <div className='testimonial-meta'> <h1>{job.title} </h1></div>
                                                     </Link>
                                                     <div className='testimonial-meta'> <h4>{job.location} </h4></div>
                                                 </div>
