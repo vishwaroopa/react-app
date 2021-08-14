@@ -12,7 +12,7 @@ const Job = () => {
         <Query query={JOB_QUERY} slug={id}>
             {({ data: { jobs } }) => {
                 return (
-                    <div className="uk-section container">
+                    <div className="uk-section container job_detail">
                         <h1>{jobs[0].title}</h1>
                         <div className="container">
                             <div class="recruit-job-job-ref">
