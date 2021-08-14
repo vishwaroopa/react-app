@@ -43,7 +43,7 @@ const Nav = () => {
                                             return (
                                                 <li class="nav-item dropdown" key={category.slug}>
                                                     <Link
-                                                        to={`/category/${category.slug}`}
+                                                        to={`/menu/${category.slug}`}
                                                         className="uk-link-reset"
                                                     >
                                                         {category.name}
@@ -51,7 +51,7 @@ const Nav = () => {
                                                     <ul class="dropdown-menu">
                                                         {category.articles.map(function (articles, i) {
                                                             return <li> <Link
-                                                                to={`/article/${articles.slug}`}
+                                                                to={`/content/${articles.slug}`}
                                                                 className="dropdown-item"
                                                             >{articles.title}</Link></li>
                                                         })}

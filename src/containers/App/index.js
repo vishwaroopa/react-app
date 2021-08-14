@@ -34,12 +34,12 @@ function App() {
           <Route path="/" component={Clients} exact />
           <Route path="/" component={Testimonials} exact />
       <Switch>
-              <Route path="/category/contact-us" component={Contact} exact />
-              <Route path="/article/contact-us" component={Contact} exact />
-              <Route path="/article/jobs" component={Jobs} exact />
-              <Route path="/article/:id" component={Article} exact />
+              <Route path="/menu/contact-us" component={Contact} exact />
+              <Route path="/content/contact-us" component={Contact} exact />
+              <Route path="/content/jobs" component={Jobs} exact />
+              <Route path="/content/:id" component={Article} exact />
               <Route path="/jobs/:id" component={Job} exact />
-              <Route path="/category/:id" component={Category} exact />
+              <Route path="/menu/:id" component={Category} exact />
              
               
           </Switch>
