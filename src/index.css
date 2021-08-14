@@ -205,3 +205,20 @@ img:hover {
         #contacts #contact .social {
             padding-top: 0px !important;
         }
+.testimonial:hover {
+    background-color: #5f99fd;
+}
+
+.testimonial-meta h1 {
+    border-bottom: none !important;
+    margin: 0 0 0px !important;
+}
+
+.job-ref-label {
+    font-weight: bold;
+    border-bottom: 1px dashed rgba(188, 188, 188, 0.69);
+    padding: 10px 0px;
+    font-size: 17px;
+    color: #5f99fd;
+    margin-bottom: 10px;
+}

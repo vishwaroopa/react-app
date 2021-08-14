@@ -7,6 +7,12 @@ const JOB_QUERY = gql`
       title
       location
 slug
+jobReference
+jobtype
+experience
+jobdescription
+requiredskills
+goodtohaveskills
     }
   }
 `;
