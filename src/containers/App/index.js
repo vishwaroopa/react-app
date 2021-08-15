@@ -37,6 +37,7 @@ function App() {
               <Route path="/menu/contact-us" component={Contact} exact />
               <Route path="/content/contact-us" component={Contact} exact />
               <Route path="/content/jobs" component={Jobs} exact />
+              <Route path="/content/submit-resume" component={Resumes} exact />
               <Route path="/content/:id" component={Article} exact />
               <Route path="/jobs/:id" component={Job} exact />
               <Route path="/menu/:id" component={Category} exact />
