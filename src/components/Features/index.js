@@ -24,7 +24,7 @@ const Features = () => {
                                                 
                                                     Learn More
                 
-                                                <h3><Link to={feature.url} className='btn btn-custom btn-lg page-scroll'><img src={logo} alt="LearnMore-button.png" /></Link></h3>
+                                                <h3><Link to={feature.url} className='btn'><img src={logo} alt="LearnMore-button.png" /></Link></h3>
                                             </div>
                                             );
                                     })}
