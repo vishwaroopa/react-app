@@ -21,9 +21,6 @@ const Features = () => {
                                                 <i className={feature.icons}></i>
                                                 <h3>{feature.Title}</h3>
                                                 <p>{feature.Description}</p>
-                                                
-                                                    Learn More
-                
                                                 <h3><Link to={feature.url} className='btn'><img src={logo} alt="LearnMore-button.png" /></Link></h3>
                                             </div>
                                             );
