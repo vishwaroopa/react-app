@@ -7,6 +7,7 @@ id
       title
       subtitle
       description
+url
       bimage {
         url
       }

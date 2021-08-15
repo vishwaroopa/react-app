@@ -34,7 +34,7 @@ const Sliders = () => {
                                                             <p>{slider.subtitle}</p>
                                                             <ReactMarkdown source={slider.description} />
                                                             <a
-                                                                href='#features'
+                                                                href={slider.url}
                                                                 className='btn btn-custom btn-lg page-scroll'>
                                                                 Learn More
                 </a>
