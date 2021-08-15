@@ -33,11 +33,9 @@ const Sliders = () => {
                                                             </h1>
                                                             <p>{slider.subtitle}</p>
                                                             <ReactMarkdown source={slider.description} />
-                                                            <a
-                                                                href={slider.url}
-                                                                className='btn btn-custom btn-lg page-scroll'>
+                                                            <Link to={slider.url} className='btn btn-custom btn-lg page-scroll'>
                                                                 Learn More
-                </a>
+                </Link>
                                                         </div>
                                                         <div className='col-md-6'>
                                                             <img src={slider.simage.url} alt="Chania" />

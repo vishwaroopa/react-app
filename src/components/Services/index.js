@@ -23,7 +23,7 @@ const Services = () => {
                             <div className='service-desc'>
                                                 <h3>{product.title}</h3>
                                                 <p>{product.description}</p>
-                                                <h3><img src={logo} alt="LearnMore-button.png" /></h3>
+                                                <h3><Link to={product.url} className='btn btn-custom btn-lg page-scroll'><img src={logo} alt="LearnMore-button.png" /></Link></h3>
                             </div>
                         </div>
 

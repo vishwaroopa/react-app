@@ -21,7 +21,10 @@ const Features = () => {
                                                 <i className={feature.icons}></i>
                                                 <h3>{feature.Title}</h3>
                                                 <p>{feature.Description}</p>
-                                                <h3><img src={logo} alt="LearnMore-button.png" /></h3>
+                                                
+                                                    Learn More
+                
+                                                <h3><Link to={feature.url} className='btn btn-custom btn-lg page-scroll'><img src={logo} alt="LearnMore-button.png" /></Link></h3>
                                             </div>
                                             );
                                     })}

@@ -5,6 +5,7 @@ const FEATURES_QUERY = gql`
     features {
       Title
       Description
+url
 icons
       icon {
         url
