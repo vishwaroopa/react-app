@@ -7,7 +7,7 @@ const Jobs = () => {
         <Query query={JOBS_QUERY} id={null}>
             {({ data: { jobs } }) => {
                 return (
-                    <div id='testimonials'>
+                    <div id='testimonials23'>
                         <div className='container'>
                             <div className='section-title text-center'>
                                 <h2>JOBS</h2>
