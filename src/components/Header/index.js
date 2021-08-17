@@ -37,7 +37,7 @@ const Sliders = () => {
                                                                 Learn More
                 </Link>
                                                         </div>
-                                                        <div className='col-md-6'>
+                                                        <div className='col-md-6 small-image'>
                                                             <img src={slider.simage.url} alt="Chania" />
                                                         </div>
 
