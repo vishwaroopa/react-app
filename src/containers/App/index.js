@@ -20,7 +20,7 @@ import Jobs from '../../components/Jobs'
 import Footer  from '../../components/Footer'
 import Clients  from '../../components/Team'
 import Email from '../../components/Contact'
-import { Resumes } from '../../components/Resumes'
+import Resumes  from '../../components/Resumes'
 
 function App() {
   return (
