@@ -19,7 +19,7 @@ import Testimonials from '../../components/Testimonials'
 import Jobs from '../../components/Jobs'
 import Footer  from '../../components/Footer'
 import Clients  from '../../components/Team'
-import { Contact } from '../../components/Contact'
+import Email from '../../components/Contact'
 import { Resumes } from '../../components/Resumes'
 
 function App() {
@@ -35,8 +35,8 @@ function App() {
           <Route path="/" component={Clients} exact />
           <Route path="/" component={Testimonials} exact />
       <Switch>
-              <Route path="/menu/contact-us" component={Contact} exact />
-              <Route path="/content/contact-us" component={Contact} exact />
+              <Route path="/menu/contact-us" component={Email} exact />
+              <Route path="/content/contact-us" component={Email} exact />
               <Route path="/content/jobs" component={Jobs} exact />
               <Route path="/content/submit-resume" component={Resumes} exact />
               <Route path="/content/:id" component={Article} exact />
