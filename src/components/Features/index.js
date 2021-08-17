@@ -16,7 +16,7 @@ const Features = () => {
                                 <div className='row'>
                                     {features.map((feature, i) => {
                                         return (
-                                            <div  className='col-xs-6 col-md-3'>
+                                            <div  className='col-xs-12 col-md-3'>
                                                 {' '}
                                                 <i className={feature.icons}></i>
                                                 <h3>{feature.Title}</h3>
