@@ -16,7 +16,7 @@ const Card = ({ article }) => {
                               <img src={imageUrl} alt={article.image.url} height="100" width="300" />
                       </div>
                   <div className='col-xs-12 col-md-6'>
-                      <Link to={`/article/${article.slug}`} className="uk-link-reset">
+                      <Link to={`/content/${article.slug}`} className="uk-link-reset">
                           <p id="title" className="uk-text-large">
                               {article.title}
                           </p>
