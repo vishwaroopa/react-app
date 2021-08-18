@@ -8,7 +8,10 @@ import CATEGORY_ARTICLES_QUERY from "../../queries/category/articles";
 import CATEGORIES_QUERY from "../../queries/category/categories";
 import GLOBAL_QUERY from "../../queries/global/global";
 import logo from '../../assets/logo.png';
-
+function showAlert() {
+    document.getElementById("bs-example-navbar-collapse-1").style.display = "none";
+    console.log("asas");
+}
 const Nav = () => {
     return (
         <div>
@@ -50,7 +53,7 @@ const Nav = () => {
                                                     </Link>
                                                     <ul class="dropdown-menu">
                                                         {category.articles.map(function (articles, i) {
-                                                            return <li> <Link
+                                                            return <li onClick={showAlert}> <Link
                                                                 to={`/content/${articles.slug}`}
                                                                 className="dropdown-item"
                                                             >{articles.title}</Link></li>
