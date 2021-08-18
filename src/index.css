@@ -239,6 +239,45 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
     #about {
         padding-bottom: 0px;
     }
+    .dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+
+    .dropdown-menu li {
+        border-bottom: 1px solid #eee;
+        text-transform: capitalize;
+    }
+
+        .dropdown-menu li a {
+            padding: 10px 20px;
+            text-transform: capitalize;
+        }
+
+    .navbar-right .dropdown-menu {
+        left: 0;
+        right: auto;
+        /* left: auto; */
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 3px;
+        min-width: 260px;
+    }
 }
 #features h3 {
     margin-top: 10px;
