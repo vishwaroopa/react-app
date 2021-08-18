@@ -14,7 +14,7 @@ function showAlert() {
 }
 function showAlert1() {
     document.getElementById("bs-example-navbar-collapse-1").style.display = "block";
-    document.getElementById("bs-example-navbar-collapse-1").style.height = "none!important";
+    document.getElementById("bs-example-navbar-collapse-1").style.height = "auto";
     console.log("asasfff");
 }
 const Nav = () => {
