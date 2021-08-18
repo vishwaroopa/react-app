@@ -103,7 +103,7 @@ const Footer = () => {
             <div id='footer'>
                 <div className='container text-center'>
                     <p>
-                       footer content
+                        Developed in ReactJS and netlyfy
                     </p>
                 </div>
             </div>
