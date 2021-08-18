@@ -325,9 +325,10 @@ header .intro-text {
 	padding: 5px 0;
 	color: #fff;
 }
-#services p {
-	color: rgba(255,255,255,.75);
-}
+	#services p {
+		color: rgba(255,255,255,.75);
+		min-height: 84px;
+	}
 #services .service-desc {
 	margin-bottom: 40px;
 }
