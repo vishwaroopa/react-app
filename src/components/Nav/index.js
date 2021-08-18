@@ -12,6 +12,10 @@ function showAlert() {
     document.getElementById("bs-example-navbar-collapse-1").style.display = "none";
     console.log("asas");
 }
+function showAlert1() {
+    document.getElementById("bs-example-navbar-collapse-1").style.display = "block";
+    console.log("asasfff");
+}
 const Nav = () => {
     return (
         <div>
@@ -22,7 +26,7 @@ const Nav = () => {
                         <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
                             <div className='container'>
                                 <div className='navbar-header'>
-                                    <button
+                                    <button onClick={showAlert1}
                                         type='button'
                                         className='navbar-toggle collapsed'
                                         data-toggle='collapse'
