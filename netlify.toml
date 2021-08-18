@@ -6,7 +6,7 @@
 [template.environment]
   REACT_APP_BACKEND_URL = "API_URL"
 
-[redirects]
+[[redirects]]
   from = "/*"
-  to = "/"
+  to = "/index.html"
   status = 200
