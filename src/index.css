@@ -43,6 +43,9 @@ h1 {
 }
 #banner h1 {
     margin-top: 60px;
+    text-align: center;
+    background-color: #5e9efc;
+    padding: 15px;
 }
 .uk-section h3 {
     color: #5e9efc;
@@ -326,6 +329,6 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
 .conatct-page ul{
     padding-left:0px!important;
 }
-#contact-us1 {
-    display:none;
+#contact-us1, #consulting1 {
+    display: none;
 }
