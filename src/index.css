@@ -303,3 +303,6 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
 .hover-bg p {
     text-align: center;
 }
+#services p {
+    margin: 5px !important;
+}
