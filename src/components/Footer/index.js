@@ -31,6 +31,7 @@ const Footer = () => {
                                     {global.Footer.content}
 
                                     <br /><br />{global.Footer.copyright}
+                                    <br /><br />Developed in ReactJS and netlyfy
                 </p>
                             </div>
                             
@@ -102,9 +103,26 @@ const Footer = () => {
             </div>
             <div id='footer'>
                 <div className='container text-center'>
-                    <p>
-                        Developed in ReactJS and netlyfy
-                    </p>
+                    <ul>
+                        <li>
+                            D-U-N-S # 828400320
+                        </li>
+                        <li>
+                            <img src="https://service.ariba.com/an/p/Ariba/badge_180x55.jpg" />
+                        </li>
+                        <li>
+                            <img src="https://service.ariba.com/an/p/Ariba/badge_180x55.jpg" />
+                        </li>
+                        <li>
+                            <img src="https://service.ariba.com/an/p/Ariba/badge_180x55.jpg" />
+                        </li>
+                        <li>
+                            <img src="https://service.ariba.com/an/p/Ariba/badge_180x55.jpg" />
+                        </li>
+                        <li>
+                            <img src="https://service.ariba.com/an/p/Ariba/badge_180x55.jpg" />
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
