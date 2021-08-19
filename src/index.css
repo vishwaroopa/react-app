@@ -185,8 +185,8 @@ img:hover {
 .contact-info p {
     margin-bottom: 5px;
 }
-.fa {
-    font: normal normal normal 14px/1 FontAwesome!important;
+#myCarousel .fa {
+    font: normal normal normal 30px/1 FontAwesome !important;
 }
 
 #contacts iframe {
