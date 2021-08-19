@@ -63,7 +63,7 @@ const Footer = () => {
                         <div className='contact-item'>
                             <p>
                                 <span>
-                                    <i className='fa fa-envelope-o'></i> {global.Footer.email}
+                                    <i className='fa fa-envelope-o'></i> <a href="mailto:info@mavininfotech.com">{global.Footer.email}</a>
                 </span>
                             </p>
                         </div>
