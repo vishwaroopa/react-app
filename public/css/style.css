@@ -447,7 +447,7 @@ header .intro-text {
 }
 /* Contact Section */
 #contact {
-	padding: 15px 0 5px 0;
+	padding: 5px 0 5px 0;
 	background: #323232;
 	color: rgba(255,255,255,.75);
 }
@@ -553,7 +553,7 @@ color: #777;
 }
 #contact .social {
 	border-top: 1px solid rgba(255,255,255,0.15);
-	padding-top: 15px;
+	padding-top: 10px;
 	text-align: center;
 }
 #contact .social ul li {
