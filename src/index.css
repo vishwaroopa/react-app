@@ -323,3 +323,6 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
 .conatct-page ul{
     padding-left:0px!important;
 }
+#contact-us {
+    display:none;
+}
