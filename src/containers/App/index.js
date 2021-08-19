@@ -15,6 +15,7 @@ import  Features  from '../../components/Features'
 import  About  from '../../components/About'
 import Projects from '../../components/Gallery'
 import Banner from '../../components/Banner'
+import Banner1 from '../../components/Banner1'
 import Testimonials from '../../components/Testimonials'
 import Jobs from '../../components/Jobs'
 import Footer  from '../../components/Footer'
@@ -34,6 +35,7 @@ function App() {
           <Route path="/" component={Services} exact />
           <Route path="/" component={Clients} exact />
           <Route path="/" component={Testimonials} exact />
+          <Route path="/" component={Banner1} exact />
       <Switch>
               <Route path="/menu/contact-us" component={Email} exact />
               <Route path="/content/contact-us" component={Email} exact />

@@ -25,6 +25,12 @@ image {
 url
 }
 }
+contactbanner {
+text
+image {
+url
+}
+}
     }
   }
 `;
