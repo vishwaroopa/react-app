@@ -65,7 +65,7 @@ img:hover {
 .red-bg {
     background: url(https://res.cloudinary.com/mavin-infotech/image/upload/v1626694329/red_bg_b5b220571d.jpg) center no-repeat;
     background-size: cover;
-    padding: 50px 0;
+    padding: 40px 0;
 }
 .features-14 .heading {
     text-align: center;
@@ -293,4 +293,10 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
 }
 .uk-container p {
     margin-top: 7px !important;
+}
+.uk-container-small h3 {
+    margin-top: 20px !important;
+}
+#footer p {
+    margin: 0px;
 }
