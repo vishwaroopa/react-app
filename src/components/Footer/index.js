@@ -108,19 +108,19 @@ const Footer = () => {
                             D-U-N-S # 828400320
                         </li>
                         <li>
-                            <img src="https://service.ariba.com/an/p/Ariba/badge_180x55.jpg" />
+                            <img src="https://res.cloudinary.com/mavin-infotech/image/upload/v1629384287/1_d895b97892.jpg?1530162.5" />
                         </li>
                         <li>
-                            <img src="https://service.ariba.com/an/p/Ariba/badge_180x55.jpg" />
+                            <img src="https://res.cloudinary.com/mavin-infotech/image/upload/v1629384287/2_93f1b09334.png?1530161" />
                         </li>
                         <li>
-                            <img src="https://service.ariba.com/an/p/Ariba/badge_180x55.jpg" />
+                            <img src="https://res.cloudinary.com/mavin-infotech/image/upload/v1629384287/3_1bf3f3d7c2.png?1530163.699999988" />
                         </li>
                         <li>
-                            <img src="https://service.ariba.com/an/p/Ariba/badge_180x55.jpg" />
+                            <img src="https://res.cloudinary.com/mavin-infotech/image/upload/v1629384287/4_e5b2219c14.png?1530161.699999988" />
                         </li>
                         <li>
-                            <img src="https://service.ariba.com/an/p/Ariba/badge_180x55.jpg" />
+                            <img src="https://res.cloudinary.com/mavin-infotech/image/upload/v1629384287/5_e384dd8a05.png?1530159.800000012" />
                         </li>
                     </ul>
                 </div>

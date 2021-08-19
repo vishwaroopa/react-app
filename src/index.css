@@ -341,3 +341,15 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
     .blue-bg .heading {
         color: black;
     }
+.heading h1 {
+    margin: 0px !important;
+    border-bottom: none !important;
+    color: white !important;
+}
+#footer li {
+    float: left;
+    padding: 10px;
+}
+#footer p {
+    margin-top: 25px;
+}
