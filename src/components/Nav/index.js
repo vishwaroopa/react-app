@@ -56,7 +56,7 @@ const Nav = () => {
                                                     >
                                                         {category.name}
                                                     </Link>
-                                                    <ul class="dropdown-menu" id={category.slug}>
+                                                    <ul class="dropdown-menu" id={`${category.slug}1`}>
                                                         {category.articles.map(function (articles, i) {
                                                             return <li onClick={showAlert}> <Link
                                                                 to={`/content/${articles.slug}`}
