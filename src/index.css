@@ -332,3 +332,6 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
 #contact-us1, #consulting1 {
     display: none;
 }
+.uk-container-small h5 {
+    margin: 10px 0px 10px 0px;
+}
