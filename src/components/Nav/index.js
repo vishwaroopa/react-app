@@ -51,12 +51,12 @@ const Nav = () => {
                                             return (
                                                 <li class="nav-item dropdown" key={category.slug}>
                                                     <Link
-                                                        to='#'
+                                                        to={category.url}
                                                         className="uk-link-reset"
                                                     >
                                                         {category.name}
                                                     </Link>
-                                                    <ul class="dropdown-menu">
+                                                    <ul class="dropdown-menu" id={category.slug}>
                                                         {category.articles.map(function (articles, i) {
                                                             return <li onClick={showAlert}> <Link
                                                                 to={`/content/${articles.slug}`}

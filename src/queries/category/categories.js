@@ -5,6 +5,7 @@ const CATEGORIES_QUERY = gql`
     categories( sort:"id:asc") {
     slug
     name
+url
 articles {
         slug
         title
