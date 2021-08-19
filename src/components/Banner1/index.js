@@ -14,7 +14,7 @@ const Banner1 = () => {
                         ? homepage.contactbanner.image.url
                         : process.env.REACT_APP_BACKEND_URL + homepage.contactbanner.image.url;
                 return (
-                    <section class="blue-bg">
+                    <section class="red-bg">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12">
