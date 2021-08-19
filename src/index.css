@@ -107,7 +107,7 @@ img:hover {
         text-align:justify;
     }
 .uk-section h1 {
-    margin-top:20px;
+    margin: 0 0 10px!important;
 }
 @media all and (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
