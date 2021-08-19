@@ -268,7 +268,7 @@ class Email extends React.Component {
                             </div>
 
                             <h3>Links</h3>
-                            <div className='row' id="contact">
+                            <div className='row conatct-page' id="contact">
                                 <div className='social'>
                                     <ul>
                                         <li>

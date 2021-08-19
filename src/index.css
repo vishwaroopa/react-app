@@ -178,11 +178,15 @@ img:hover {
 #contacts h4 {
     color: #627aff;
     margin-top: -10px;
+    margin-bottom: 10px;
     font-size: 17px;
 }
 
 .contact-info p {
     margin-bottom: 5px;
+}
+.fa {
+    font: normal normal normal 14px/1 FontAwesome!important;
 }
 
 #contacts iframe {
@@ -311,4 +315,11 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
 }
 #contact ul {
     margin: 0px 0 0px 0;
+}
+.conatct-page {
+    margin-bottom: 10px;
+    float:left;
+}
+.conatct-page ul{
+    padding-left:0px!important;
 }
