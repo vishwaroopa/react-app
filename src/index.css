@@ -233,8 +233,8 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
 }
 @media only screen and (max-width: 600px) {
     .uk-section {
-        padding-top: 20px !important;
-        padding-bottom: 30px !important;
+        padding-top: 5px !important;
+        padding-bottom: 20px !important;
     }
     .small-image {
         display: none;

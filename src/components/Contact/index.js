@@ -272,17 +272,17 @@ class Email extends React.Component {
                                 <div className='social'>
                                     <ul>
                                         <li>
-                                            <a href=''>
+                                            <a href='https://www.facebook.com/pages/Mavin-Infotech/135556656509121' target='_blank'>
                                                 <i className='fa fa-facebook'></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href=''>
+                                            <a href='https://twitter.com/intent/tweet?text=Web+development+company+%7C+Software+application+development&url=http%3A%2F%2Fwww.mavininfotech.com%2F%23.UoMVYpaX7Y8.twitter&related=' target='_blank'>
                                                 <i className='fa fa-twitter'></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href=''>
+                                            <a href='http://in.linkedin.com/in/mavininfotech' target='_blank'>
                                                 <i className='fa fa-youtube'></i>
                                             </a>
                                         </li>

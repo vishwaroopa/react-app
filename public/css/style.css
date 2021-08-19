@@ -401,6 +401,9 @@ header .intro-text {
 }
 .testimonial {
 	position: relative;
+	border: 1px solid #46597512;
+	padding: 10px;
+	margin-bottom: 10px;
 }
 .testimonial-image {
 	float: left;
@@ -594,6 +597,9 @@ color: #777;
 #about img {
 	margin: 50px 0;
 }
+	.carousel-inner .item_sub {
+		height: 470px !important;
+	}
 }
 
 .portfolio-item p {
