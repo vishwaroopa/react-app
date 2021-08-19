@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { Link } from "react-router-dom";
 import Query from "../Query";
 import HOMEPAGE_QUERY from "../../queries/homepage/homepage";
+import ReactMarkdown from "react-markdown";
 
 const Banner1 = () => {
     return (
@@ -13,12 +14,12 @@ const Banner1 = () => {
                         ? homepage.contactbanner.image.url
                         : process.env.REACT_APP_BACKEND_URL + homepage.contactbanner.image.url;
                 return (
-                    <section class="red-bg">
+                    <section class="blue-bg">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="features-14">
-                                        <h1 class="heading">{homepage.contactbanner.text}</h1>
+                                        <h1 class="heading"><ReactMarkdown source={homepage.contactbanner.text} /></h1>
                                     </div>
                                 </div>
                             </div>
