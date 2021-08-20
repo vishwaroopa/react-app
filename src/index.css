@@ -369,10 +369,14 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
     margin-top: 25px;
 }
 #footer img {
-    width: 140px;
+    width: 130px;
     height: 50px;
 }
 #footer .text-center {
     width: auto!important;
     float: right;
+}
+.login-icon {
+    width: auto !important;
+    float: left;
 }
