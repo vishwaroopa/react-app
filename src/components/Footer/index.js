@@ -115,6 +115,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
+                <div class="container text-center" style="width: auto;float: left;"><img src="https://res.cloudinary.com/mavin-infotech/image/upload/v1629469934/login_icon_aefbe2860f.png?7671780.100000024" /></div>
             </div>
         </div>
                     )
