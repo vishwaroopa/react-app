@@ -265,6 +265,7 @@ class Email extends React.Component {
                                         <i className='fa fa-envelope-o'></i>  vijay.garfield@mavininfotech.com
                                     </span>
                                 </p>
+                                <br/>
                             </div>
 
                         </div>
