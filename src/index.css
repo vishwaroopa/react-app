@@ -68,14 +68,20 @@ img:hover {
 .red-bg {
     background: url(https://res.cloudinary.com/mavin-infotech/image/upload/v1626694329/red_bg_b5b220571d.jpg) center no-repeat;
     background-size: cover;
-    padding: 40px 0;
+    padding: 30px 0;
 }
+    .red-bg h1 a {
+        background-color: #323232;
+        border-radius: 5px;
+        color: white;
+        padding: 5px;
+    }
 .features-14 .heading {
     text-align: center;
     color: #e2e1e1;
     padding: 0px;
     margin: 0;
-    border-bottom:none;
+    border-bottom: none;
 }
 .aboutus {
     background: #608bfd;
