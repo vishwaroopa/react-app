@@ -24,7 +24,7 @@ const Sliders = () => {
                                                     ? "inactive"
                                                     : "active";
                                             return (
-                                                <div class={`item ${classname}`}>
+                                                <div class={`carousel-item ${classname}`}>
                                                     <img src={slider.bimage.url} alt="Chania" class="item_sub" />
                                                     <div class="carousel-caption">
                                                         <div className='col-md-6'>

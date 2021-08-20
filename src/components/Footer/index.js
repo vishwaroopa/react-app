@@ -68,13 +68,7 @@ const Footer = () => {
                 </span>
                             </p>
                         </div>
-                        <div className='contact-item'>
-                            <p>
-                                <span>
-                                    <i className='fa fa-phone'></i> {global.Footer.duns}
-                                </span>
-                            </p>
-                        </div>
+                        
                     </div>
                     <div className='col-md-12'>
                         <div className='row' id="contact">
