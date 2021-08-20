@@ -105,9 +105,6 @@ const Footer = () => {
                 <div className='container text-center'>
                     <ul>
                         <li>
-                            D-U-N-S # 828400320
-                        </li>
-                        <li>
                             <img src="https://res.cloudinary.com/mavin-infotech/image/upload/v1629384287/1_d895b97892.jpg?1530162.5" />
                         </li>
                         <li>
