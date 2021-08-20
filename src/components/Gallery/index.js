@@ -10,7 +10,7 @@ const Projects = () => {
                     <div id='portfolio' className='text-center'>
                         <div className='container'>
                             <div className='section-title'>
-                                <h2>LATEST PROJECTS</h2>
+                                <h2>LATEST PROJECTS/CLIENTS</h2>
                                
                             </div>
                  <div className='row'>

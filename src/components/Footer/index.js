@@ -30,7 +30,7 @@ const Footer = () => {
                                 <p>
                                     {global.Footer.content}
 
-                                    <br /><br />{global.Footer.copyright}
+                                    <br /><br />{global.Footer.copyright} - D-U-N-S # 828400320
                                     <br /><br />Developed in ReactJS and netlyfy
                 </p>
                             </div>
