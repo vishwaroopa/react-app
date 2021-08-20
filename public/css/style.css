@@ -579,8 +579,9 @@ color: #777;
 }
 /* Footer Section*/
 #footer {
-	background: #5e9efc;
-	padding: 15px 0;
+	background: #ffffff;
+	padding: 5px 0;
+	float: right;
 }
 #footer p {
 	color: WHITE;
