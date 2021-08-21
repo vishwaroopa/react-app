@@ -58,12 +58,11 @@ class Email extends React.Component {
             variables
         ).then(res => {
             alert("Email successfully sent");
-            location.reload();
+
         })
             // Email Failed to send Error alert
             .catch(err => {
                 alert("Email Error:");
-                location.reload();
                 console.error('Email Error:', err)
             })
     }
