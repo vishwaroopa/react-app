@@ -118,7 +118,7 @@ const Footer = () => {
                 
                 <button type="button" class="btn login-icon" data-toggle="modal" data-target="#exampleModal">
                     <img src="https://res.cloudinary.com/mavin-infotech/image/upload/v1629469934/login_icon_aefbe2860f.png?7671780.100000024" />
-</button>
+                </button>
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -154,7 +154,7 @@ const Footer = () => {
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td colspan="2"><a href="javascript:void(0)" onclick="createloginbox()">Forgot Password</a></td>
+                                                        <td colspan="2"><a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal1" onclick="createloginbox()">Forgot Password</a></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -224,6 +224,49 @@ const Footer = () => {
                                                 </tbody>
                                             </table>
                                             <table><tbody><tr>  <td width="100%" id="td_cls"><a href="but.html"> <img src="https://www.mavininfotech.com/sites/default/files/AM_mc_vs_dc_ae.jpg" border="0" alt="PayPal Acceptance Mark" width="100%" /></a></td></tr></tbody></table>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="light1" class="white_content" >
+
+                                    <div class="accordion-inner accordion-inner-login" id="login_inner">
+                                        <form name="form1" method="post" action="https://www.mavininfotech.com/emplogin/mailpassword.php">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" id="close_table">
+
+                                                <tbody><tr>
+
+                                                    <td>
+
+                                                        <div align="center"><b>Email Address :</b> &nbsp;&nbsp;
+                          <input type="text" class="txtfield" name="formemail" id="txtToMail" placeholder="Email" required /></div>
+
+                                                    </td>
+
+                                                </tr>
+
+                                                </tbody></table>
+
+                                            <div align="center">
+
+                                                <input type="submit" name="button" id="btnEmPwd" value="Email my Password" />
+
+                                            </div>
+
+
                                         </form>
                                     </div>
                                 </div>
