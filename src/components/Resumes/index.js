@@ -64,12 +64,13 @@ class Resumes extends React.Component {
             'service_sx3mkzo', templateId,
             variables
         ).then(res => {
+            alert("Email successfully sent to admin");
             // Email successfully sent alert
 
         })
             // Email Failed to send Error alert
             .catch(err => {
-
+                alert("Email Error");
                 console.error('Email Error:', err)
             })
     }
