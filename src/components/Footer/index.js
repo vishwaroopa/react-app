@@ -116,7 +116,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 
-                <button type="button" class="btn btn-primary login-icon" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn login-icon" data-toggle="modal" data-target="#exampleModal">
                     <img src="https://res.cloudinary.com/mavin-infotech/image/upload/v1629469934/login_icon_aefbe2860f.png?7671780.100000024" />
 </button>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -129,7 +129,109 @@ const Footer = () => {
                                 </button>
                             </div>
                             <div class="modal-body">
-                                ...
+                                <div id="light" class="white_content" style="display: block;">
+                                    <a href="javascript:void(0)" onclick="closelightbox()" class="close_login_box">
+                                        <span class="closebtn">x</span></a>
+                                    <div class="accordion-inner" id="login_inner">
+                                        <form action="https://email.secureserver.net/login.php" method="post" name="login_form" id="login_form">
+                                            <h5>Webmail Login</h5>
+                                            <table cellpadding="0" cellspacing="0" width="100%" align="center">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="content">
+                                                            <input type="text" name="username" class="txtfield" size="26" required="" placeholder="Username" />
+                                                                <input type="hidden" name="domain" value="mavininfotech.com" />
+                </td>
+            </tr>
+
+                                                            <tr>
+                                                                <td class="content">
+                                                                    <input type="password" name="password" class="txtfield" size="26" required="" placeholder="Password" />
+                </td>
+            </tr>
+
+                                                                <tr>
+                                                                    <td colspan="2">
+                                                                        <input name="button" type="submit" class="btn" id="button" value="Submit" onclick="javascript: return form_login();" />
+                                                                            </td>
+            </tr>
+                                                                    <tr>
+                                                                        <td colspan="2"><a href="javascript:void(0)" onclick="createloginbox()">Forgot Password</a></td>
+                                                                    </tr>
+        </tbody>
+    </table>
+</form>
+                                    </div>
+
+                                                    <div class="accordion-inner timesheetlog" id="login_inner">
+                                                        <form method="post" action="https://www.mavininfotech.com/emplogin/processlogin.php" name="timesheet">
+                                                            <h5>Employee System Login</h5>
+                                                            <table cellpadding="0" cellspacing="0" width="100%" align="center">
+                                                                <tbody>
+
+
+                                                                    <tr>
+                                                                        <td class="content">
+                                                                            <input type="text" name="formlogin" class="txtfield" size="26" required="" placeholder="Username" />
+                                                                                <input type="hidden" name="domain" value="mavininfotech.com" / >
+                </td>
+            </tr>
+
+                                                                            <tr>
+                                                                                <td class="content">
+                                                                                    <input type="password" name="formpassword" class="txtfield" size="26" required="" placeholder="Password" />
+                </td>
+            </tr>
+
+                                                                                <tr>
+                                                                                    <td colspan="2">
+                                                                                        <input name="button" type="submit" class="btn" id="button" value="Submit" onclick="javascript: return validate();" />
+                                                                                           </td>
+            </tr>
+                                                                                    <tr>
+                                                                                        <td colspan="2"><a href="javascript:void(0)" onclick="createloginbox()">Forgot Password</a></td>
+                                                                                    </tr>
+        </tbody>
+    </table>
+</form>
+                                </div>
+                                                                    <div class="accordion-inner">
+                                                                        <form action="https://www.mavininfotech.com/emplogin/client/logincheck.php?ok=1" method="post" name="login_form" id="login_form">
+                                                                            <h5>Client Login</h5>
+                                                                            <table cellpadding="0" cellspacing="0" width="100%" align="center">
+                                                                                <tbody>
+
+
+                                                                                    <tr>
+                                                                                        <td class="content">
+                                                                                            <input type="text" name="username" class="txtfield" size="26" required="" placeholder="Username" />
+                                                                                                <input type="hidden" name="domain" value="mavininfotech.com" />
+                </td>
+            </tr>
+
+                                                                                            <tr>
+                                                                                                <td class="content">
+                                                                                                    <input type="password" name="password" class="txtfield" size="26" required="" placeholder="Password" />
+                </td>
+            </tr>
+
+                                                                                                <tr>
+                                                                                                    <td colspan="2">
+                                                                                                        <input name="button" type="submit" class="btn" id="button" value="Submit" onclick="javascript: return validate();" />
+                                                                                                           </td>
+            </tr>
+                                                                                                    <tr>
+                                                                                                        <td colspan="2"><a href="javascript:void(0)" onclick="createloginbox()">Forgot Password</a></td>
+                                                                                                    </tr>
+        </tbody>
+    </table>
+                                                                                            <table><tbody><tr>  <td width="100%" id="td_cls"><a href="but.html"> <img src="https://www.mavininfotech.com/sites/default/files/AM_mc_vs_dc_ae.jpg" border="0" alt="PayPal Acceptance Mark" width="100%" /></a></td></tr></tbody></table>
+</form>
+                                    </div>
+ 
+                                    
+                                    
+</div>
       </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
