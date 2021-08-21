@@ -129,7 +129,7 @@ const Footer = () => {
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <div id="light" class="white_content" style="display: block;">
+                                <div id="light" class="white_content">
                                     <a href="javascript:void(0)" onclick="closelightbox()" class="close_login_box">
                                         <span class="closebtn">x</span></a>
                                     <div class="accordion-inner" id="login_inner">
