@@ -383,3 +383,101 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
 .login-icon img {
     width:auto!important;
 }
+.accordion-inner {
+    padding: 9px 15px;
+    display: block;
+    float: left !important;
+    width: 257px;
+    clear: none !important;
+}
+
+.white_content h5 {
+    background-color: #7c7c7c;
+    padding: 10px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-align: center;
+}
+
+.white_content input[type=submit]:hover, .white_content input[type=button]:hover {
+    background: #7c7c7c;
+    color: #fff;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+}
+
+.white_content input[type=submit], .white_content input[type=button] {
+    background: #5e9efc;
+    color: #fff;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+}
+
+#button {
+    cursor: pointer;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #f2f2f2;
+    border-color: #e8e8e8 #e8e8e8 #fff;
+    border-image: none;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 5%) inset;
+    color: #595959;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.white_content input {
+    width: 100%;
+    margin-bottom: 5px !important;
+}
+
+#footer a {
+    color: #5e9efc;
+    font-size: 14px;
+    /* color: #000; */
+    line-height: 20px;
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+    margin-top: -6px;
+}
+
+.modal-content {
+    height: 520px;
+}
+
+.close {
+    opacity: 0.8;
+}
+
+.modal-header {
+    padding: 5px;
+    border-bottom: none;
+}
+
+    .modal-header .close {
+        background: #5e9efc;
+        padding: 3px 10px;
+        font-size: 20px;
+        font-weight: 500;
+        /* margin-right: -28px; */
+        /* margin-top: -30px; */
+        float: right;
+        color: #FFF;
+    }
