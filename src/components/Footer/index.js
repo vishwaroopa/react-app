@@ -153,9 +153,7 @@ const Footer = () => {
                                                             <input name="button" type="submit" class="btn" id="button" value="Submit" onclick="javascript: return form_login();" />
                                                         </td>
                                                     </tr>
-                                                    <tr>
-                                                        <td colspan="2"><a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal1" onclick="createloginbox()">Forgot Password</a></td>
-                                                    </tr>
+                                                   
                                                 </tbody>
                                             </table>
                                         </form>
@@ -187,7 +185,7 @@ const Footer = () => {
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td colspan="2"><a href="javascript:void(0)" onclick="createloginbox()">Forgot Password</a></td>
+                                                        <td colspan="2"><a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal1" onclick="createloginbox()">Forgot Password</a></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -219,7 +217,7 @@ const Footer = () => {
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td colspan="2"><a href="javascript:void(0)" onclick="createloginbox()">Forgot Password</a></td>
+                                                        <td colspan="2"><a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal1" onclick="createloginbox()">Forgot Password</a></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
