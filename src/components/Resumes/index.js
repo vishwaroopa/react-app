@@ -41,7 +41,7 @@ class Resumes extends React.Component {
         event.preventDefault();
 
         //This templateId is created in EmailJS.com
-        const templateId = 'template_50ndavb';
+        const templateId = 'template_1rj8hwx';
 
         //This is a custom method from EmailJS that takes the information 
         //from the form and sends the email with the information gathered 
