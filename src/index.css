@@ -481,3 +481,6 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
         float: right;
         color: #FFF;
     }
+.login-icon {
+    background: none;
+}

@@ -153,7 +153,6 @@ const Footer = () => {
                                                             <input name="button" type="submit" class="btn" id="button" value="Submit" onclick="javascript: return form_login();" />
                                                         </td>
                                                     </tr>
-                                                   
                                                 </tbody>
                                             </table>
                                         </form>
@@ -221,7 +220,7 @@ const Footer = () => {
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <table><tbody><tr>  <td width="100%" id="td_cls"><a href="https://www.mavininfotech.com/but.html"> <img src="https://www.mavininfotech.com/sites/default/files/AM_mc_vs_dc_ae.jpg" border="0" alt="PayPal Acceptance Mark" width="100%" /></a></td></tr></tbody></table>
+                                            <table><tbody><tr>  <td width="100%" id="td_cls"><a href="but.html"> <img src="https://www.mavininfotech.com/sites/default/files/AM_mc_vs_dc_ae.jpg" border="0" alt="PayPal Acceptance Mark" width="100%" /></a></td></tr></tbody></table>
                                         </form>
                                     </div>
                                 </div>
@@ -240,7 +239,6 @@ const Footer = () => {
                             </div>
                             <div class="modal-body">
                                 <div id="light1" class="white_content" >
-
 
                                     <div class="accordion-inner accordion-inner-login" id="login_inner">
                                         <form name="form1" method="post" action="https://www.mavininfotech.com/emplogin/mailpassword.php">
