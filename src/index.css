@@ -487,15 +487,21 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 .arabia {
     width:164px!important;
 }
-iso {
+.iso {
     width: 98px !important;
 }
-msme {
+.msme {
     width: 97px !important;
 }
-we {
+.we {
     width: 121px !important;
 }
-small {
+.small {
     width: 129px !important;
+}
+
+.duns {
+    color: black;
+    font-weight: bold;
+    margin-top: 15px;
 }
