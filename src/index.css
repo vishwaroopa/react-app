@@ -1,7 +1,9 @@
 a {
   text-decoration: none;
 }
-
+.item_sub1 {
+    display: none !important;
+}
 h1 {
     border-bottom: 1px solid #e8e8e8;
     margin: 0 0 30px;
@@ -530,7 +532,4 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     color: black;
     font-weight: bold;
     margin-top: 15px;
-}
-.item_sub1 {
-    display: none !important;
 }
