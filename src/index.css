@@ -264,11 +264,15 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
         display: none;
     }
     .modal-content {
-        height: 700px;
+        height: 700px !important;
     }
     #footer button img {
         width: 20px !important;
         height: 25px !important;
+    }
+    #footer a img {
+        width: auto !important;
+        height: auto !important;
     }
     .duns {
         margin-top: 5px !important;
