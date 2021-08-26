@@ -263,7 +263,10 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
     #footer li img {
         display: none;
     }
-    #footer  img {
+    .modal-content {
+        height: 700px;
+    }
+    #footer button img {
         width: 20px !important;
         height: 25px !important;
     }
