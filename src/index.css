@@ -256,6 +256,9 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
     .item_sub {
         display: none !important;
     }
+    .item_sub1 {
+        display: none !important;
+    }
     .carousel-inner .item_sub1 {
         height: 470px !important;
     }
