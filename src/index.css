@@ -253,6 +253,12 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
     .carousel-inner .item_sub {
         height: 470px !important;
     }
+    .item_sub {
+        display:none;
+    }
+    .carousel-inner .item_sub1 {
+        height: 470px !important;
+    }
     .uk-section {
         padding-top: 5px !important;
         padding-bottom: 20px !important;
@@ -521,4 +527,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     color: black;
     font-weight: bold;
     margin-top: 15px;
+}
+.item_sub1 {
+    display: none;
 }
