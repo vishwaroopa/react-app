@@ -26,7 +26,7 @@ const Sliders = () => {
                                             return (
                                                 <div class={`item ${classname}`}>
                                                     <img src={slider.bimage.url} alt="Mavin Infotech" class="item_sub" />
-                                                    <img src="https://res.cloudinary.com/mavin-infotech/image/upload/v1629970196/home_banner_5eb28553ba.png?267531901.30000007" alt="Mavin Infotech" class="item_sub1" />
+                                                    <img src="https://res.cloudinary.com/mavin-infotech/image/upload/v1629970196/home_banner_5eb28553ba.png?267531901.30000007" alt="Mavin Infotech" class="item_sub1 item_sub2" />
                                                     <div class="carousel-caption">
                                                         <div className='col-md-6'>
                                                             <h1>
