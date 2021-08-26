@@ -260,6 +260,16 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
     .small-image {
         display: none;
     }
+    #footer li img {
+        display: none;
+    }
+    #footer  img {
+        width: 20px !important;
+        height: 25px !important;
+    }
+    .duns {
+        margin-top: 5px !important;
+    }
 
     #myCarousel {
         margin-top: 80px;
