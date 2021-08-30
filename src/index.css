@@ -252,6 +252,9 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
     font-family: Lato,sans-serif !important;
 }
 @media only screen and (max-width: 600px) {
+    .intro h1 {
+        font-size: 40px !important;
+    }
     .carousel-inner .item_sub {
         height: 470px !important;
     }
@@ -263,6 +266,7 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
     }
     .carousel-inner .item_sub1 {
         height: 470px !important;
+        width: 100%;
     }
     .uk-section {
         padding-top: 5px !important;
