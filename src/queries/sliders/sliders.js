@@ -2,7 +2,7 @@ import gql from "graphql-tag";
 
 const SLIDERS_QUERY = gql`
   query Sliders {
-    sliders {
+ sliders( sort:"id:asc") {
 id
       title
       subtitle
