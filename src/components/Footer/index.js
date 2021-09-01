@@ -161,7 +161,7 @@ D-U-N-S # 828400320                        </li>
                                     </div>
 
                                     <div class="accordion-inner timesheetlog" id="login_inner">
-                                        <form method="post" action="https://www.mavininfotech.com/emplogin/processlogin.php" name="timesheet">
+                                        <form method="post" action="https://admin.mavininfotech.com/emplogin/processlogin.php" name="timesheet">
                                             <h5>Employee System Login</h5>
                                             <table cellpadding="0" cellspacing="0" width="100%" align="center">
                                                 <tbody>
@@ -193,7 +193,7 @@ D-U-N-S # 828400320                        </li>
                                         </form>
                                     </div>
                                     <div class="accordion-inner">
-                                        <form action="https://www.mavininfotech.com/emplogin/client/logincheck.php?ok=1" method="post" name="login_form" id="login_form">
+                                        <form action="https://admin.mavininfotech.com/emplogin/client/logincheck.php?ok=1" method="post" name="login_form" id="login_form">
                                             <h5>Client Login</h5>
                                             <table cellpadding="0" cellspacing="0" width="100%" align="center">
                                                 <tbody>
@@ -222,7 +222,7 @@ D-U-N-S # 828400320                        </li>
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <table><tbody><tr>  <td width="100%" id="td_cls"><a href="but.html"> <img src="https://www.mavininfotech.com/sites/default/files/AM_mc_vs_dc_ae.jpg" border="0" alt="PayPal Acceptance Mark" width="100%" /></a></td></tr></tbody></table>
+                                            <table><tbody><tr>  <td width="100%" id="td_cls"><a href="but.html"> <img src="https://admin.mavininfotech.com/sites/default/files/AM_mc_vs_dc_ae.jpg" border="0" alt="PayPal Acceptance Mark" width="100%" /></a></td></tr></tbody></table>
                                         </form>
                                     </div>
                                 </div>
@@ -243,7 +243,7 @@ D-U-N-S # 828400320                        </li>
                                 <div id="light1" class="white_content" >
 
                                     <div class="accordion-inner accordion-inner-login" id="login_inner">
-                                        <form name="form1" method="post" action="https://www.mavininfotech.com/emplogin/mailpassword.php">
+                                        <form name="form1" method="post" action="https://admin.mavininfotech.com/emplogin/mailpassword.php">
                                             <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" id="close_table">
 
                                                 <tbody><tr>
