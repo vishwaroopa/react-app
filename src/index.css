@@ -537,3 +537,6 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     font-weight: bold;
     margin-top: 15px;
 }
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 362px!important;
+}

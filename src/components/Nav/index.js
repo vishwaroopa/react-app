@@ -12,12 +12,16 @@ function showAlert() {
     document.getElementById("bs-example-navbar-collapse-1").style.display = "none";
     console.log("asas");
 }
+clickHandler: function(text, e) {
+    console.log(text);
+}
 function showAlert1() {
     document.getElementById("bs-example-navbar-collapse-1").style.display = "block";
     document.getElementById("bs-example-navbar-collapse-1").style.height = "auto";
     console.log("asasfff");
 }
 const Nav = () => {
+    let showAlert3 = this.clickHandler.bind(this, 'Hello');
     return (
         <div>
             <Query query={CATEGORIES_QUERY} id={null}>
@@ -58,7 +62,7 @@ const Nav = () => {
                                                     </Link>
                                                     <ul class="dropdown-menu" id={`${category.slug}1`}>
                                                         {category.articles.map(function (articles, i) {
-                                                            return <li onClick={showAlert}> <Link
+                                                            return <li onClick={showAlert3}> <Link
                                                                 to={`/content/${articles.slug}`}
                                                                 className="dropdown-item"
                                                             >{articles.title}</Link></li>
