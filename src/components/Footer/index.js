@@ -222,7 +222,7 @@ D-U-N-S # 828400320                        </li>
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <table><tbody><tr>  <td width="100%" id="td_cls"><a href="but.html"> <img src="https://admin.mavininfotech.com/sites/default/files/AM_mc_vs_dc_ae.jpg" border="0" alt="PayPal Acceptance Mark" width="100%" /></a></td></tr></tbody></table>
+                                            <table><tbody><tr>  <td width="100%" id="td_cls"><a href="but.html"> <img src="https://admin.mavininfotech.com/AM_mc_vs_dc_ae.jpg" border="0" alt="PayPal Acceptance Mark" width="100%" /></a></td></tr></tbody></table>
                                         </form>
                                     </div>
                                 </div>
