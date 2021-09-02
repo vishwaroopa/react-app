@@ -161,7 +161,7 @@ D-U-N-S # 828400320                        </li>
                                     </div>
 
                                     <div class="accordion-inner timesheetlog" id="login_inner">
-                                        <form method="post" action="https://admin.mavininfotech.com/emplogin/processlogin.php" name="timesheet">
+                                        <form method="post" action="http://admin.mavininfotech.com/emplogin/processlogin.php" name="timesheet">
                                             <h5>Employee System Login</h5>
                                             <table cellpadding="0" cellspacing="0" width="100%" align="center">
                                                 <tbody>
@@ -193,7 +193,7 @@ D-U-N-S # 828400320                        </li>
                                         </form>
                                     </div>
                                     <div class="accordion-inner">
-                                        <form action="https://admin.mavininfotech.com/emplogin/client/logincheck.php?ok=1" method="post" name="login_form" id="login_form">
+                                        <form action="http://admin.mavininfotech.com/emplogin/client/logincheck.php?ok=1" method="post" name="login_form" id="login_form">
                                             <h5>Client Login</h5>
                                             <table cellpadding="0" cellspacing="0" width="100%" align="center">
                                                 <tbody>
