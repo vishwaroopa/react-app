@@ -19,7 +19,21 @@ function showAlert1() {
 }
 function sayHello(test) {
     console.log("xxxxxxxxxxx");
-    console.log("test");
+    console.log(test);
+    if (test == "it-consulting") {
+        document.getElementById("bs-example-navbar-collapse-1").style.display = "none";
+        console.log("if");
+    }
+    else {
+        console.log("else");
+    }
+    if (test = "it-consulting") {
+        document.getElementById("bs-example-navbar-collapse-1").style.display = "none";
+        console.log("if");
+    }
+    else {
+        console.log("else");
+    }
 }
 
 class Nav extends React.Component {
