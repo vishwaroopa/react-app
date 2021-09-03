@@ -20,7 +20,7 @@ function showAlert1() {
 
 class Nav extends React.Component {
     handleClick = (event) => {
-        event.preventDefault();
+        console.log("xxxxxx");
     }
     render() {
         return (
