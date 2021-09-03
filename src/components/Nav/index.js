@@ -19,8 +19,8 @@ function showAlert1() {
 }
 
 class Nav extends React.Component {
-    handleClick = (event) => {
-        console.log("xxxxxx");
+    handleClick = (test) => {
+        console.log(test);
     }
     render() {
         return (
@@ -54,7 +54,7 @@ class Nav extends React.Component {
                                         <ul className='nav navbar-nav navbar-right'>
                                             {categories.map((category, i) => {
                                                 return (
-                                                    <li class="nav-item dropdown" key={category.slug} onClick={this.handleClick}>
+                                                    <li class="nav-item dropdown" key={category.slug} onClick={this.handleClick(category.slug)}>
                                                         <Link
                                                             to={category.url}
                                                             className="uk-link-reset"
