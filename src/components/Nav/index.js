@@ -12,15 +12,16 @@ function showAlert() {
     document.getElementById("bs-example-navbar-collapse-1").style.display = "none";
     console.log("asas");
 }
-clickHandler: function(text, e) {
-    console.log(text);
-}
+
 function showAlert1() {
     document.getElementById("bs-example-navbar-collapse-1").style.display = "block";
     document.getElementById("bs-example-navbar-collapse-1").style.height = "auto";
     console.log("asasfff");
 }
 const Nav = () => {
+    clickHandler: function(text, e) {
+        console.log(text);
+    }
     let showAlert3 = this.clickHandler.bind(this, 'Hello');
     return (
         <div>
