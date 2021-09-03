@@ -22,6 +22,7 @@ handleClick = value => () => {
 };
 class Nav extends React.Component {
     render() {
+        const handleClick = this.handleClick;
         return (
             <div>
                 <Query query={CATEGORIES_QUERY} id={null}>
@@ -53,7 +54,7 @@ class Nav extends React.Component {
                                         <ul className='nav navbar-nav navbar-right'>
                                             {categories.map((category, i) => {
                                                 return (
-                                                    <li class="nav-item dropdown" key={category.slug} onClick={this.handleClick(category.slug)}>
+                                                    <li class="nav-item dropdown" key={category.slug} onClick={handleClick(category.slug)}>
                                                         <Link
                                                             to={category.url}
                                                             className="uk-link-reset"
