@@ -17,11 +17,12 @@ function showAlert1() {
     document.getElementById("bs-example-navbar-collapse-1").style.height = "auto";
     console.log("asasfff");
 }
+function sayHello(test) {
+    console.log("xxxxxxxxxx");
+    console.log("test");
+}
 
 class Nav extends React.Component {
-    handleClick = (test) => {
-        console.log(test);
-    }
     render() {
         return (
             <div>
@@ -54,7 +55,7 @@ class Nav extends React.Component {
                                         <ul className='nav navbar-nav navbar-right'>
                                             {categories.map((category, i) => {
                                                 return (
-                                                    <li class="nav-item dropdown" key={category.slug} onClick={this.handleClick(category.slug)}>
+                                                    <li class="nav-item dropdown" key={category.slug} onClick={() => sayHello(category.slug)}>
                                                         <Link
                                                             to={category.url}
                                                             className="uk-link-reset"
