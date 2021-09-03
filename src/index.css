@@ -288,116 +288,119 @@ img:hover {
 body, h1, h2, h3, h4, h5, h6, p, li, span, a {
     font-family: Lato,sans-serif !important;
 }
-@media screen and (orientation:landscape) and (max-width: 600px) {
-    #features p {
-  text-align: center !important;
-    }
-    .intro h1 {
-        font-size: 40px !important;
-    }
-    .navbar-fixed-top .navbar-collapse {
-        max-height: 220px !important;
-    }
-    .carousel-inner .item_sub {
-        height: 470px !important;
-    }
+    @media screen and (orientation:landscape) and (min-width: 481px) and (max-width: 767px) {
+        #features p {
+            text-align: center !important;
+        }
 
-    .item_sub {
-        display: none !important;
-    }
+        .intro h1 {
+            font-size: 40px !important;
+        }
 
-    .item_sub2 {
-        display: block !important;
-    }
+        .navbar-fixed-top .navbar-collapse {
+            max-height: 220px !important;
+        }
 
-    .carousel-inner .item_sub1 {
-        height: 330px !important;
-        width: 100%;
-    }
+        .carousel-inner .item_sub {
+            height: 470px !important;
+        }
 
-    .uk-section {
-        padding-top: 5px !important;
-        padding-bottom: 20px !important;
-    }
+        .item_sub {
+            display: none !important;
+        }
 
-    .small-image {
-        display: none;
-    }
+        .item_sub2 {
+            display: block !important;
+        }
 
-    #footer li img {
-        display: none;
-    }
+        .carousel-inner .item_sub1 {
+            height: 330px !important;
+            width: 100%;
+        }
 
-    .modal-content {
-        height: 700px !important;
-    }
+        .uk-section {
+            padding-top: 5px !important;
+            padding-bottom: 20px !important;
+        }
 
-    #footer button img {
-        width: 20px !important;
-        height: 25px !important;
-    }
+        .small-image {
+            display: none;
+        }
 
-    #footer a img {
-        width: auto !important;
-        height: auto !important;
-    }
+        #footer li img {
+            display: none;
+        }
 
-    .duns {
-        margin-top: 5px !important;
-    }
+        .modal-content {
+            height: 700px !important;
+        }
 
-    #myCarousel {
-        margin-top: 80px;
-    }
+        #footer button img {
+            width: 20px !important;
+            height: 25px !important;
+        }
 
-    .about-text {
-        margin-top: 20px;
-    }
+        #footer a img {
+            width: auto !important;
+            height: auto !important;
+        }
 
-    #about {
-        padding-bottom: 0px;
-    }
+        .duns {
+            margin-top: 5px !important;
+        }
 
-    .dropdown:hover > .dropdown-menu {
-        display: block;
-    }
+        #myCarousel {
+            margin-top: 80px;
+        }
 
-    .navbar .nav-item .dropdown-menu {
-        display: none;
-    }
+        .about-text {
+            margin-top: 20px;
+        }
 
-    .navbar .nav-item:hover .nav-link {
-    }
+        #about {
+            padding-bottom: 0px;
+        }
 
-    .navbar .nav-item:hover .dropdown-menu {
-        display: block;
-    }
+        .dropdown:hover > .dropdown-menu {
+            display: block;
+        }
 
-    .navbar .nav-item .dropdown-menu {
-        margin-top: 0;
-    }
+        .navbar .nav-item .dropdown-menu {
+            display: none;
+        }
 
-    .dropdown-menu li {
-        border-bottom: 1px solid #eee;
-        text-transform: capitalize;
-    }
+        .navbar .nav-item:hover .nav-link {
+        }
 
-        .dropdown-menu li a {
-            padding: 10px 20px;
+        .navbar .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+
+        .navbar .nav-item .dropdown-menu {
+            margin-top: 0;
+        }
+
+        .dropdown-menu li {
+            border-bottom: 1px solid #eee;
             text-transform: capitalize;
         }
 
-    .navbar-right .dropdown-menu {
-        left: 0;
-        right: auto;
-        /* left: auto; */
-    }
+            .dropdown-menu li a {
+                padding: 10px 20px;
+                text-transform: capitalize;
+            }
 
-    .navbar .nav-item .dropdown-menu {
-        margin-top: 3px;
-        min-width: 260px;
+        .navbar-right .dropdown-menu {
+            left: 0;
+            right: auto;
+            /* left: auto; */
+        }
+
+        .navbar .nav-item .dropdown-menu {
+            margin-top: 3px;
+            min-width: 260px;
+        }
     }
-}
     @media only screen and (max-width: 600px) {
         .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
             max-height: 362px !important;
