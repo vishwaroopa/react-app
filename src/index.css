@@ -290,7 +290,7 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
 }
 @media screen and (orientation:landscape) {
     #features p {
-=        text-align: center !important;
+  text-align: center !important;
     }
     .intro h1 {
         font-size: 40px !important;
