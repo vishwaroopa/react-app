@@ -18,7 +18,7 @@ function showAlert1() {
     console.log("asasfff");
 }
 function sayHello(test) {
-    console.log("xxxxxxxxxx");
+    console.log("xxxxxxxxxxx");
     console.log("test");
 }
 
