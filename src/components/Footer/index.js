@@ -11,7 +11,6 @@ const initialState = {
     email: '',
     message: '',
 }
-class Footer extends React.Component {
 const Footer = () => {
         return (
             <Query query={GLOBAL_QUERY} id={null}>
