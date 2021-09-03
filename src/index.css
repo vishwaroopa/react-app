@@ -399,6 +399,9 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
     }
 }
     @media only screen and (max-width: 600px) {
+        .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+            max-height: 362px !important;
+        }
         .intro h1 {
             font-size: 40px !important;
         }
@@ -728,6 +731,4 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
         margin-top: 15px;
     }
 
-    .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
-        max-height: 362px !important;
-    }
+  
