@@ -19,10 +19,10 @@ function showAlert1() {
 }
 
 class Nav extends React.Component {
+    handleClick = value => () => {
+        console.log(value);
+    };
     render() {
-        handleClick = value => () => {
-            console.log(value);
-        };
         return (
             <div>
                 <Query query={CATEGORIES_QUERY} id={null}>
