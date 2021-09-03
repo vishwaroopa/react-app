@@ -18,16 +18,12 @@ function showAlert1() {
     console.log("asasfff");
 }
 function sayHello(test) {
-    console.log("xxxxxxxxxxx");
     console.log(test);
-    if (test == "it-consulting") {
+    if (test = "it-consulting") {
         document.getElementById("bs-example-navbar-collapse-1").style.display = "none";
         console.log("if");
     }
-    else {
-        console.log("else");
-    }
-    if (test = "it-consulting") {
+    else if (test = "contact-us") {
         document.getElementById("bs-example-navbar-collapse-1").style.display = "none";
         console.log("if");
     }
