@@ -10,22 +10,20 @@ import GLOBAL_QUERY from "../../queries/global/global";
 import logo from '../../assets/logo.png';
 function showAlert() {
     document.getElementById("bs-example-navbar-collapse-1").style.display = "none";
-    console.log("asas");
 }
 function showAlert1() {
     document.getElementById("bs-example-navbar-collapse-1").style.display = "block";
     document.getElementById("bs-example-navbar-collapse-1").style.height = "auto";
-    console.log("asasfff");
 }
 function sayHello(test) {
     console.log(test);
-    if (test = "it-consulting") {
+    if (test == "it-consulting") {
         document.getElementById("bs-example-navbar-collapse-1").style.display = "none";
-        console.log("if");
+        console.log("if-x");
     }
-    else if (test = "contact-us") {
+    else if (test == "contact-us") {
         document.getElementById("bs-example-navbar-collapse-1").style.display = "none";
-        console.log("if");
+        console.log("if-y");
     }
     else {
         console.log("else");
