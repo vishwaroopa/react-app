@@ -17,12 +17,12 @@ function showAlert1() {
     document.getElementById("bs-example-navbar-collapse-1").style.height = "auto";
     console.log("asasfff");
 }
-handleClick = value => () => {
-    console.log(value);
-};
+
 class Nav extends React.Component {
     render() {
-        const handleClick = this.handleClick;
+        handleClick = value => () => {
+            console.log(value);
+        };
         return (
             <div>
                 <Query query={CATEGORIES_QUERY} id={null}>
