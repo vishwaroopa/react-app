@@ -17,7 +17,7 @@ function showAlert1() {
 }
 function sayHello(test) {
     console.log(test);
-    if (test == "it-consulting") {
+    if (test == "consulting") {
         document.getElementById("bs-example-navbar-collapse-1").style.display = "none";
         console.log("if-x");
     }
