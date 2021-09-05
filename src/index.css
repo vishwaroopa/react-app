@@ -129,7 +129,7 @@ img:hover {
 .uk-section h1 {
     margin: 0 0 10px!important;
 }
-@media screen and (orientation:landscape) and (min-width: 992px) {
+@media screen and (orientation:landscape) and (min-width: 481px) and (max-width: 823px) {
     .navbar .nav-item .dropdown-menu {
         display: none;
     }
