@@ -164,7 +164,7 @@ class Resumes extends React.Component {
                 </button>
                                     <div>
                                         {this.state.mailSent &&
-                                            <div id='success'>Thank you for contcting us.</div>
+                                            <div id='success'>Thank you for submitting resume with us.</div>
                                         }
                                     </div>
                                 </form><br /><br />

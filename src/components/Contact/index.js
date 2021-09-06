@@ -135,7 +135,7 @@ class Email extends React.Component {
                                         Send Message
                 </button> <div>
                                         {this.state.mailSent &&
-                                            <div id='success'>Thank you for contcting us.</div>
+                                            <div id='success'>Thank you for contacting us.</div>
                                         }
                                     </div>
                                 </form>
