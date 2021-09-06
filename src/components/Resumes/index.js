@@ -1,6 +1,6 @@
 import React from 'react'
 //import Swal from 'sweetalert2'
-
+import axios from "axios";
 class Resumes extends React.Component {
     constructor(props) {
         super(props);
@@ -10,7 +10,9 @@ class Resumes extends React.Component {
             name2: '',
             email: '',
             number: '',
-            resume: ''
+            resume: '',
+            mailSent: false,
+            error: null
         };
     }
     // saves the user's name entered to state
@@ -40,41 +42,26 @@ class Resumes extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
 
-        //This templateId is created in EmailJS.com
-        const templateId = 'template_1rj8hwx';
-
-        //This is a custom method from EmailJS that takes the information 
-        //from the form and sends the email with the information gathered 
-        //and formats the email based on the templateID provided.
-        this.sendFeedback(templateId, {
-            message: this.state.feedback,
-            name: this.state.name,
-            email: this.state.email,
-            name2: this.state.name2,
-            number: this.state.number,
-            resume: this.state.resume
-        }
-        )
-
-    }
-
-    //Custom EmailJS method
-    sendFeedback = (templateId, variables) => {
-        window.emailjs.send(
-            'service_sx3mkzo', templateId,
-            variables
-        ).then(res => {
-            alert("Email successfully sent to admin");
-            // Email successfully sent alert
-
+        axios({
+            method: 'post',
+            url: 'http://admin.mavininfotech.com/api/resume.php',
+            headers: {
+                'content-type': 'application/x-www-form-urlencoded'
+            },
+            data: this.state
         })
-            // Email Failed to send Error alert
-            .catch(err => {
-                alert("Email Error");
-                console.error('Email Error:', err)
+            .then(result => {
+                console.log(result.data)
+                this.setState({
+                    mailSent: result.data.sent,
+                })
+                console.log(this.state)
             })
-    }
+            .catch(error => this.setState({
+                error: error.message
+            }));
 
+    }
     render() {
         return (
             <div>
@@ -172,10 +159,14 @@ class Resumes extends React.Component {
                                         />
                                         <p className='help-block text-danger'></p>
                                     </div>
-                                    <div id='success'></div>
                                     <button type='submit' className='btn btn-custom btn-lg'>
                                         Save Appication
                 </button>
+                                    <div>
+                                        {this.state.mailSent &&
+                                            <div id='success'>Thank you for contcting us.</div>
+                                        }
+                                    </div>
                                 </form><br /><br />
                             </div>
                         </div>
