@@ -44,7 +44,7 @@ class Resumes extends React.Component {
 
         axios({
             method: 'post',
-            url: 'http://admin.mavininfotech.com/api/resume.php',
+            url: 'https://admin.mavininfotech.com/api/resume.php',
             headers: {
                 'content-type': 'application/x-www-form-urlencoded'
             },
