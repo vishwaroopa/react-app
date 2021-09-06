@@ -733,5 +733,12 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
         font-weight: bold;
         margin-top: 15px;
     }
-
-  
+#success {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #617ffe;
+    border-radius: 5px;
+    padding: 7px;
+    margin-top: 15px;
+}

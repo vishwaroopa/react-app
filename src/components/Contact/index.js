@@ -1,7 +1,7 @@
 import React from 'react'
 //import Swal from 'sweetalert2'
 //import swal from 'sweetalert';
-
+import axios from "axios";
 //swal("Hello world!");
 class Email extends React.Component {
     constructor(props) {
@@ -10,7 +10,9 @@ class Email extends React.Component {
             feedback: '',
             name: '',
             email: '',
-            subject: ''
+            subject: '',
+            mailSent: false,
+            error: null
         };
     }
     // saves the user's name entered to state
@@ -35,38 +37,25 @@ class Email extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
 
-        //This templateId is created in EmailJS.com
-        const templateId = 'template_50ndavb';
-
-        //This is a custom method from EmailJS that takes the information 
-        //from the form and sends the email with the information gathered 
-        //and formats the email based on the templateID provided.
-        this.sendFeedback(templateId, {
-            message: this.state.feedback,
-            name: this.state.name,
-            email: this.state.email,
-            subject: this.state.subject
-        }
-        )
-
-    }
-
-    //Custom EmailJS method
-    sendFeedback = (templateId, variables) => {
-        window.emailjs.send(
-            'service_sx3mkzo', templateId,
-            variables
-        ).then(res => {
-            alert("Email successfully sent");
-
+        axios({
+            method: 'post',
+            url: 'https://admin.mavininfotech.com/api/contact.php',
+            headers: {
+                'content-type': 'application/x-www-form-urlencoded'
+            },
+            data: this.state
         })
-            // Email Failed to send Error alert
-            .catch(err => {
-                alert("Email Error:");
-                console.error('Email Error:', err)
+            .then(result => {
+                console.log(result.data)
+                this.setState({
+                    mailSent: result.data.sent,
+                })
+                console.log(this.state)
             })
+            .catch(error => this.setState({
+                error: error.message
+            }));
     }
-
     render() {
         return (
             <div>
@@ -145,7 +134,11 @@ class Email extends React.Component {
                                     <div id='success'></div>
                                     <button type='submit' className='btn btn-custom btn-lg'>
                                         Send Message
-                </button>
+                </button> <div>
+                                        {this.state.mailSent &&
+                                            <div id='success'>Thank you for contcting us.</div>
+                                        }
+                                    </div>
                                 </form>
                             </div>
                         </div>
