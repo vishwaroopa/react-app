@@ -131,7 +131,6 @@ class Email extends React.Component {
                                         ></textarea>
                                         <p className='help-block text-danger'></p>
                                     </div>
-                                    <div id='success'></div>
                                     <button type='submit' className='btn btn-custom btn-lg'>
                                         Send Message
                 </button> <div>
