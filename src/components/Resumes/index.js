@@ -10,10 +10,22 @@ class Resumes extends React.Component {
             name2: '',
             email: '',
             number: '',
-            resume: '',
             mailSent: false,
-            error: null
-        };
+            error: null,
+            file: null,
+        }
+        this.onFormSubmit = this.onFormSubmit.bind(this)
+        this.onChange = this.onChange.bind(this)
+        this.fileUpload = this.fileUpload.bind(this)
+    }
+    onFormSubmit(e) {
+        e.preventDefault() // Stop form submit
+        this.fileUpload(this.state.file, this.state.name, this.state.feedback, this.state.name2, this.state.email, this.state.number).then((response) => {
+            console.log(response.data);
+            this.setState({
+                mailSent: response.data.sent,
+            })
+        })
     }
     // saves the user's name entered to state
     nameChange = (event) => {
@@ -38,29 +50,26 @@ class Resumes extends React.Component {
     numberChange = (event) => {
         this.setState({ number: event.target.value })
     }
+    onChange(e) {
+        this.setState({ file: e.target.files[0] })
+    }
     //onSubmit of email form
-    handleSubmit = (event) => {
-        event.preventDefault();
 
-        axios({
-            method: 'post',
-            url: 'https://admin.mavininfotech.com/api/resume.php',
+    fileUpload(file, name, feedback, name2, email, number) {
+        const url = 'https://admin.mavininfotech.com/api/resume.php';
+        const formData = new FormData();
+        formData.append('file', file)
+        formData.append('name', name)
+        formData.append('feedback', feedback)
+        formData.append('name2', name2)
+        formData.append('email', email)
+        formData.append('number', number)
+        const config = {
             headers: {
                 'content-type': 'application/x-www-form-urlencoded'
-            },
-            data: this.state
-        })
-            .then(result => {
-                console.log(result.data)
-                this.setState({
-                    mailSent: result.data.sent,
-                })
-                console.log(this.state)
-            })
-            .catch(error => this.setState({
-                error: error.message
-            }));
-
+            }
+        }
+        return post(url, formData, config)
     }
     render() {
         return (
@@ -164,7 +173,7 @@ class Resumes extends React.Component {
                 </button>
                                     <div>
                                         {this.state.mailSent &&
-                                            <div id='success'>Thank you for submitting resume with us.</div>
+                                            <div id='success'>Thank you for submitting resume with us. We will check and get back to you soon..</div>
                                         }
                                     </div>
                                 </form><br /><br />
