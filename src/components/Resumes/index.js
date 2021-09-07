@@ -1,6 +1,7 @@
 import React from 'react'
 //import Swal from 'sweetalert2'
-import axios from "axios";
+import axios, { post } from 'axios';
+
 class Resumes extends React.Component {
     constructor(props) {
         super(props);
