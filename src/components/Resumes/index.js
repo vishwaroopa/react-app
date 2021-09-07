@@ -165,7 +165,7 @@ class Resumes extends React.Component {
                                             rows='4'
                                             placeholder='Upload Resume'
                                             required
-                                            onChange={this.resumeChange}
+                                            onChange={this.onChange}
                                         />
                                         <p className='help-block text-danger'></p>
                                     </div>
