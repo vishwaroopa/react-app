@@ -85,7 +85,7 @@ class Resumes extends React.Component {
                                     <h1>SUBMIT RESUME</h1>
 
                                 </div>
-                                <form name='sentMessage' onSubmit={this.handleSubmit} >
+                                <form name='sentMessage' onSubmit={this.onFormSubmit} >
                                     <div className='row'>
                                         <div className='col-md-6'>
                                             <div className='form-group'>
