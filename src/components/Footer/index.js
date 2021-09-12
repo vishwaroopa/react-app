@@ -31,7 +31,7 @@ const Footer = () => {
                                     {global.Footer.content}
 
                                     <br /><br />{global.Footer.copyright} - D-U-N-S # 828400320
-                                    <br /><br />Developed in ReactJS and netlify
+                                    <br /><br />Developed in ReactJS and Netlify
                 </p>
                             </div>
                             
