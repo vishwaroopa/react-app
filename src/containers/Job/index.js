@@ -32,15 +32,15 @@ const Job = () => {
                                 <ReactMarkdown source={jobs[0].jobdescription} />
                             </div>
                             <div class="recruit-job-job-ref">
-                                <div class="job-ref-label">Job Description:</div>
+                                <div class="job-ref-label">Responsibilities:</div>
                                 <ReactMarkdown source={jobs[0].Responsibilities} />
                             </div>
                             <div class="recruit-job-job-ref">
-                                <div class="job-ref-label">Job Description:</div>
+                                <div class="job-ref-label">Skills Required:</div>
                                 <ReactMarkdown source={jobs[0].skillsRequired} />
                             </div>
                             <div class="recruit-job-job-ref">
-                                <div class="job-ref-label">Job Description:</div>
+                                <div class="job-ref-label">Skill Desired:</div>
                                 <ReactMarkdown source={jobs[0].skillsDesired} />
                             </div>
                             <div class="recruit-job-job-ref">
@@ -49,7 +49,7 @@ const Job = () => {
                             </div>
                             <div class="recruit-job-job-ref">
                                 <div class="job-ref-label">Primary Skill Set:</div>
-                                {jobs[0].education}
+                                {jobs[0].primarySkillset}
                             </div>
                         </div>
                     </div>
