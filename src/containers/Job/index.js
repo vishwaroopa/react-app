@@ -16,7 +16,7 @@ const Job = () => {
                         <h1>{jobs[0].title}</h1>
                         <div className="container">
                             <div class="recruit-job-job-ref">
-                                <div class="job-ref-label">Title:</div>
+                                <div class="job-ref-label">Role:</div>
                                 {jobs[0].title}
                             </div>
                             <div class="recruit-job-job-ref">
