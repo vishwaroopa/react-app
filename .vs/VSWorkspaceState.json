@@ -1,12 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
+    "\\public\\css",
+    "\\public\\css\\nivo-lightbox",
     "\\src",
+    "\\src\\components",
     "\\src\\components\\Contact",
     "\\src\\components\\Footer",
-    "\\src\\containers\\App",
-    "\\src\\queries\\category"
+    "\\src\\components\\Resumes",
+    "\\src\\containers"
   ],
-  "SelectedNode": "\\src\\queries",
+  "SelectedNode": "\\src\\components\\Footer\\index.js",
   "PreviewInSolutionExplorer": false
 }

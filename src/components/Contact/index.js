@@ -190,6 +190,38 @@ class Email extends React.Component {
                                 </p>
                             </div>
                             <p className='dashed-item'></p>
+                            <h4> Australia Office:</h4>
+                            <div className='contact-item'>
+                                <p>
+                                    <span>
+                                        Garfield Vijay (Project Manager)
+                                    </span>
+                                </p>
+                            </div>
+                            <div className='contact-item'>
+                                <p>
+                                    <span>
+                                        <i className='fa fa-map-marker'></i> 10 Anderson ct Endeavour hills Vic-3802.<br />
+
+                                    </span>
+                                </p>
+                            </div>
+                            <div className='contact-item'>
+                                <p>
+                                    <span>
+                                        <i className='fa fa-fax'></i> +61 448278886<br />
+                                    </span>
+                                </p>
+                            </div>
+                            <div className='contact-item'>
+                                <p>
+                                    <span>
+                                        <i className='fa fa-envelope-o'></i>  vijay.garfield@mavininfotech.com
+                                    </span>
+                                </p>
+                                <br/>
+                            </div>
+                            <p className='dashed-item'></p>
                             <h4> Sales & Support:</h4>
                             <div className='contact-item'>
                                 <p>
@@ -227,39 +259,7 @@ class Email extends React.Component {
                                     </span>
                                 </p>
                             </div>
-                            <p className='dashed-item'></p>
-                            <h4> Australia Office:</h4>
-                            <div className='contact-item'>
-                                <p>
-                                    <span>
-                                        Garfield Vijay (Project Manager)
-                                    </span>
-                                </p>
-                            </div>
-                            <div className='contact-item'>
-                                <p>
-                                    <span>
-                                        <i className='fa fa-map-marker'></i> 10 Anderson ct Endeavour hills Vic-3802.<br />
-
-                                    </span>
-                                </p>
-                            </div>
-                            <div className='contact-item'>
-                                <p>
-                                    <span>
-                                        <i className='fa fa-fax'></i> +61 448278886<br />
-                                    </span>
-                                </p>
-                            </div>
-                            <div className='contact-item'>
-                                <p>
-                                    <span>
-                                        <i className='fa fa-envelope-o'></i>  vijay.garfield@mavininfotech.com
-                                    </span>
-                                </p>
-                                <br/>
-                            </div>
-
+                           
                         </div>
                     </div>
                 </div>
