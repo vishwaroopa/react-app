@@ -16,16 +16,8 @@ const Job = () => {
                         <h1>{jobs[0].title}</h1>
                         <div className="container">
                             <div class="recruit-job-job-ref">
-                                <div class="job-ref-label">Job Reference:</div>
-                                {jobs[0].jobReference}
-                            </div>
-                            <div class="recruit-job-job-ref">
                                 <div class="job-ref-label">Title:</div>
                                 {jobs[0].title}
-                            </div>
-                            <div class="recruit-job-job-ref">
-                                <div class="job-ref-label">Job Type:</div>
-                                {jobs[0].jobtype}
                             </div>
                             <div class="recruit-job-job-ref">
                                 <div class="job-ref-label">Location:</div>
@@ -38,11 +30,26 @@ const Job = () => {
                             <div class="recruit-job-job-ref">
                                 <div class="job-ref-label">Job Description:</div>
                                 <ReactMarkdown source={jobs[0].jobdescription} />
-
                             </div>
                             <div class="recruit-job-job-ref">
-                                <div class="job-ref-label">Required Skils:</div>
-                                {jobs[0].requiredskills}
+                                <div class="job-ref-label">Job Description:</div>
+                                <ReactMarkdown source={jobs[0].Responsibilities} />
+                            </div>
+                            <div class="recruit-job-job-ref">
+                                <div class="job-ref-label">Job Description:</div>
+                                <ReactMarkdown source={jobs[0].skillsRequired} />
+                            </div>
+                            <div class="recruit-job-job-ref">
+                                <div class="job-ref-label">Job Description:</div>
+                                <ReactMarkdown source={jobs[0].skillsDesired} />
+                            </div>
+                            <div class="recruit-job-job-ref">
+                                <div class="job-ref-label">Education:</div>
+                                {jobs[0].education}
+                            </div>
+                            <div class="recruit-job-job-ref">
+                                <div class="job-ref-label">Primary Skill Set:</div>
+                                {jobs[0].education}
                             </div>
                         </div>
                     </div>

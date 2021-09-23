@@ -13,6 +13,11 @@ experience
 jobdescription
 requiredskills
 goodtohaveskills
+skillsDesired
+Responsibilities
+skillsRequired
+education
+primarySkillset
     }
   }
 `;
