@@ -5,7 +5,7 @@ import ReactMarkdown from "react-markdown";
 import Moment from "react-moment";
 
 import JOB_QUERY from "../../queries/jobs/job";
-
+import { Link } from "react-router-dom";
 const Job = () => {
     let { id } = useParams();
     return (
