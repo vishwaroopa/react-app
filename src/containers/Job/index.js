@@ -9,11 +9,12 @@ import JOB_QUERY from "../../queries/jobs/job";
 import { Link } from "react-router-dom";
 function BlogPost() {
     let { id } = useParams();
-    return  {id};
+    return <div>Now showing post {id}</div>;
 }
-
-const Job = () => {
-    let { id } = useParams();
+const test = BlogPost();
+console.log(test);
+class Job extends React.Component {
+    
     constructor(props) {
         super(props);
         this.state = {
@@ -74,6 +75,7 @@ const Job = () => {
         }
         return post(url, formData, config)
     }
+    render() {
         return (
             <Query query={JOB_QUERY} slug={id}>
                 {({ data: { jobs } }) => {
@@ -202,5 +204,6 @@ const Job = () => {
             </Query>
         );
     }
+}
 
 export default Job;
