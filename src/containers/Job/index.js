@@ -11,6 +11,10 @@ function BlogPost() {
     let { id } = useParams();
     return <div>Now showing post {id}</div>;
 }
+function showAlert7() {
+    document.getElementById("apply_resume").style.display = "block";
+    document.getElementById("button_resume").style.display = "none";
+}
 class Job extends React.Component {
     
     constructor(props) {
@@ -129,9 +133,9 @@ class Job extends React.Component {
                                 </div>
                             </div>
                             <div class="recruit-job-job-ref">
-                                <button type="submit" class="btn btn-custom btn-lg">Apply</button>
+                                <button type="submit" id="button_resume" onClick={showAlert7} class="btn btn-custom btn-lg">Apply</button>
                             </div>
-                            <form name='sentMessage' onSubmit={this.onFormSubmit} >
+                            <form name='sentMessage' id="apply_resume" onSubmit={this.onFormSubmit} >
                                 <div className='row'>
                                     <div className='col-md-6'>
                                         <div className='form-group'>

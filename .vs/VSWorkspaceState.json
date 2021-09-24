@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
-    "\\public\\css",
-    "\\public\\css\\nivo-lightbox",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Contact",
-    "\\src\\components\\Footer",
-    "\\src\\components\\Resumes",
-    "\\src\\containers"
+    "\\src\\components\\Jobs",
+    "\\src\\data",
+    "\\src\\queries",
+    "\\src\\queries\\homepage",
+    "\\src\\queries\\products",
+    "\\src\\queries\\projects",
+    "\\src\\queries\\sliders"
   ],
-  "SelectedNode": "\\src\\components\\Footer\\index.js",
+  "SelectedNode": "\\src\\containers\\Job\\index.js",
   "PreviewInSolutionExplorer": false
 }
