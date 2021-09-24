@@ -127,15 +127,20 @@ class Job extends React.Component {
                                     <div class="job-ref-label">Primary Skill Set:</div>
                                     {jobs[0].primarySkillset}
                                 </div>
-                                <div class="recruit-job-job-ref">
-                                    <div class="job-ref-label">Primary Skill Set:</div>
-                                    {jobs[0].primarySkillset}
-                                </div>
                             </div>
                             <div class="recruit-job-job-ref">
                                 <button type="submit" id="button_resume" onClick={showAlert7} class="btn btn-custom btn-lg">Apply</button>
                             </div>
                             <form name='sentMessage' id="apply_resume" onSubmit={this.onFormSubmit} >
+                                <input type='hidden' name="title" value={jobs[0].title} />
+                                <input type='hidden' name="location" value={jobs[0].location} />
+                                <input type='hidden' name="experience" value={jobs[0].experience} />
+                                <input type='hidden' name="jobdescription" value={jobs[0].jobdescription} />
+                                <input type='hidden' name="responsibilities" value={jobs[0].Responsibilities} />
+                                <input type='hidden' name="skillsrequired" value={jobs[0].skillsRequired} />
+                                <input type='hidden' name="skillsdesired" value={jobs[0].skillsDesired} />
+                                <input type='hidden' name="education" value={jobs[0].education} />
+                                <input type='hidden' name="primaryskillset" value={jobs[0].primarySkillset} />
                                 <div className='row'>
                                     <div className='col-md-6'>
                                         <div className='form-group'>
