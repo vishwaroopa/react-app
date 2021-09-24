@@ -19,6 +19,7 @@ const Banner = () => {
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="features-14">
                                         <h1 class="heading">{homepage.banner1.title}</h1>
+                                        <h1 class="heading"><ReactMarkdown source={homepage.contactbanner.text} /></h1>
                                     </div>
                                 </div>
                             </div>
