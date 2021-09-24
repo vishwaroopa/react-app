@@ -11,9 +11,13 @@ const Job = () => {
     return (
         <Query query={JOB_QUERY} slug={id}>
             {({ data: { jobs } }) => {
+                const jobs_url ="/content/jobs";
                 return (
                     <div className="uk-section container job_detail">
-                        <h1>{jobs[0].title}</h1>
+                        <h1><span>{jobs[0].title}</span><span class="title_right"> <Link
+                            to={jobs_url}
+                            className="uk-link-reset"
+                        >View all Vacancies</Link></span></h1>
                         <div className="container">
                             <div class="recruit-job-job-ref">
                                 <div class="job-ref-label">Role:</div>
@@ -51,6 +55,13 @@ const Job = () => {
                                 <div class="job-ref-label">Primary Skill Set:</div>
                                 {jobs[0].primarySkillset}
                             </div>
+                            <div class="recruit-job-job-ref">
+                                <div class="job-ref-label">Primary Skill Set:</div>
+                                {jobs[0].primarySkillset}
+                            </div>
+                        </div>
+                        <div class="recruit-job-job-ref">
+                          <button class="apply">Apply</button>
                         </div>
                     </div>
                 );

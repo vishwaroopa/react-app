@@ -744,3 +744,6 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
 .recruit-job-job-ref li {
     list-style-type: circle;
 }
+.title_right {
+    float:right;
+}
