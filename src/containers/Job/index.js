@@ -74,7 +74,8 @@ class Job extends React.Component {
         return post(url, formData, config)
     }
     render() {
-        console.log(this.props);
+        const { id } = this.props.params;
+        console.log(id);
         let id = "full_stack_developer";
         return (
             <Query query={JOB_QUERY} slug={id}>
