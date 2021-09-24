@@ -401,9 +401,10 @@ header .intro-text {
 }
 .testimonial {
 	position: relative;
-	border: 1px solid #46597512;
+	border: 1px solid #4659753b;
 	padding: 10px;
 	margin-bottom: 10px;
+	box-shadow: 1px 2px 2px #4659753b;
 }
 .testimonial-image {
 	float: left;
