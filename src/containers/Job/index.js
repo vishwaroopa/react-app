@@ -7,9 +7,12 @@ import axios, { post } from 'axios';
 
 import JOB_QUERY from "../../queries/jobs/job";
 import { Link } from "react-router-dom";
+function BlogPost() {
+    let { id } = useParams();
+    return  {id};
+}
 class Job extends React.Component {
-   let { id } = useParams();
-
+    
     constructor(props) {
         super(props);
         this.state = {
@@ -72,7 +75,7 @@ class Job extends React.Component {
     }
     render() {
         return (
-            <Query query={JOB_QUERY} slug={id}>
+            <Query query={JOB_QUERY} slug={BlogPost}>
                 {({ data: { jobs } }) => {
                     const jobs_url = "/content/jobs";
                     return (
