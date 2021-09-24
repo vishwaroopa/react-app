@@ -7,7 +7,7 @@ import axios, { post } from 'axios';
 
 import JOB_QUERY from "../../queries/jobs/job";
 import { Link } from "react-router-dom";
-let { id } = useParams();
+
 class Job extends React.Component {
     
     constructor(props) {
