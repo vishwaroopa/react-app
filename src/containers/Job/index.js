@@ -8,6 +8,66 @@ import JOB_QUERY from "../../queries/jobs/job";
 import { Link } from "react-router-dom";
 const Job = () => {
     let { id } = useParams();
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: '',
+            email: '',
+            number: '',
+            mailSent: false,
+            error: null,
+            file: null,
+        }
+        this.onFormSubmit = this.onFormSubmit.bind(this)
+        this.onChange = this.onChange.bind(this)
+        this.fileUpload = this.fileUpload.bind(this)
+    }
+    onFormSubmit(e) {
+        e.preventDefault() // Stop form submit
+        this.fileUpload(this.state.file, this.state.name, this.state.email, this.state.number).then((response) => {
+            console.log(response.data);
+            this.setState({
+                mailSent: response.data.sent,
+            })
+        })
+    }
+    // saves the user's name entered to state
+    nameChange = (event) => {
+        this.setState({ name: event.target.value })
+    }
+ 
+    // saves the user's email entered to state
+    emailChange = (event) => {
+        this.setState({ email: event.target.value })
+    }
+
+    
+    // saves the user's message entered to state
+    resumeChange = (event) => {
+        this.setState({ resume: event.target.value })
+    }
+    numberChange = (event) => {
+        this.setState({ number: event.target.value })
+    }
+    onChange(e) {
+        this.setState({ file: e.target.files[0] })
+    }
+    //onSubmit of email form
+
+    fileUpload(file, name, email, number) {
+        const url = 'https://admin.mavininfotech.com/api/resume.php';
+        const formData = new FormData();
+        formData.append('file', file)
+        formData.append('name', name)
+        formData.append('email', email)
+        formData.append('number', number)
+        const config = {
+            headers: {
+                'content-type': 'application/x-www-form-urlencoded'
+            }
+        }
+        return post(url, formData, config)
+    }
     return (
         <Query query={JOB_QUERY} slug={id}>
             {({ data: { jobs } }) => {
@@ -61,8 +121,75 @@ const Job = () => {
                             </div>
                         </div>
                         <div class="recruit-job-job-ref">
-                          <button class="apply">Apply</button>
+                            <button type="submit" class="btn btn-custom btn-lg">Apply</button>
                         </div>
+                        <form name='sentMessage' onSubmit={this.onFormSubmit} >
+                            <div className='row'>
+                                <div className='col-md-6'>
+                                    <div className='form-group'>
+                                        <input
+                                            type='text'
+                                            id='name'
+                                            name='name'
+                                            className='form-control'
+                                            placeholder='Name'
+                                            required
+                                            onChange={this.nameChange}
+                                        />
+                                        <p className='help-block text-danger'></p>
+                                    </div>
+                                </div>
+                                <div className='col-md-6'>
+                                    <div className='form-group'>
+                                        <input
+                                            type='email'
+                                            id='email'
+                                            name='email'
+                                            className='form-control'
+                                            placeholder='Email Address'
+                                            required
+                                            onChange={this.emailChange}
+                                        />
+                                        <p className='help-block text-danger'></p>
+                                    </div>
+                                </div>
+                                <div className='col-md-6'>
+                                    <div className='form-group'>
+                                        <input
+                                            type='text'
+                                            id='number'
+                                            name='number'
+                                            className='form-control'
+                                            placeholder='Contact Number'
+                                            required
+                                            onChange={this.numberChange}
+                                        />
+                                        <p className='help-block text-danger'></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='form-group'>
+                                Upload Resume<input
+                                    type="file"
+                                    name='resume'
+                                    id='resume'
+                                    className='form-control'
+                                    rows='4'
+                                    placeholder='Upload Resume'
+                                    required
+                                    onChange={this.onChange}
+                                />
+                                <p className='help-block text-danger'></p>
+                            </div>
+                            <button type='submit' className='btn btn-custom btn-lg'>
+                                Save Appication
+                </button>
+                            <div>
+                                {this.state.mailSent &&
+                                    <div id='success'>Thank you for submitting resume with us. We will check and get back to you soon..</div>
+                                }
+                            </div>
+                        </form>
                     </div>
                 );
             }}
