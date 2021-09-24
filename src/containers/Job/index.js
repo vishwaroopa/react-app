@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 import Query from "../../components/Query";
 import ReactMarkdown from "react-markdown";
 import Moment from "react-moment";
+import axios, { post } from 'axios';
 
 import JOB_QUERY from "../../queries/jobs/job";
 import { Link } from "react-router-dom";
