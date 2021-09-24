@@ -11,8 +11,6 @@ function BlogPost() {
     let { id } = useParams();
     return <div>Now showing post {id}</div>;
 }
-const test = BlogPost();
-console.log(test);
 class Job extends React.Component {
     
     constructor(props) {
