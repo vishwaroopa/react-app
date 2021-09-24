@@ -76,6 +76,8 @@ class Job extends React.Component {
         return post(url, formData, config)
     }
     render() {
+        console.log(this.props);
+        let id = "asas";
         return (
             <Query query={JOB_QUERY} slug={id}>
                 {({ data: { jobs } }) => {
