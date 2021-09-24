@@ -8,6 +8,7 @@ const JOBS_QUERY = gql`
       experience
 slug
 id
+jobReference
 jobtype
     }
   }
