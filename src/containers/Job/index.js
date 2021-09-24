@@ -11,8 +11,9 @@ function BlogPost() {
     let { id } = useParams();
     return  {id};
 }
-class Job extends React.Component {
-    
+
+const Job = () => {
+    let { id } = useParams();
     constructor(props) {
         super(props);
         this.state = {
@@ -73,9 +74,8 @@ class Job extends React.Component {
         }
         return post(url, formData, config)
     }
-    render() {
         return (
-            <Query query={JOB_QUERY} slug={BlogPost}>
+            <Query query={JOB_QUERY} slug={id}>
                 {({ data: { jobs } }) => {
                     const jobs_url = "/content/jobs";
                     return (
@@ -202,6 +202,5 @@ class Job extends React.Component {
             </Query>
         );
     }
-}
 
 export default Job;
