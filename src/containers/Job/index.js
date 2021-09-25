@@ -145,7 +145,7 @@ class Job extends React.Component {
                                 <button type="submit" id="button_resume" onClick={showAlert7} class="btn btn-custom btn-lg">Apply</button>
                             </div>
                             <form name='sentMessage' id="apply_resume" onSubmit={this.onFormSubmit} >
-                                <input type='hidden' name="title" value={jobs[0].title} ref={(input) => { this.actionInput = input }}  />
+                                <input type='hidden' name="title" value={jobs[0].title} ref={(input) => { this.titleInput = input }}  />
                                 <input type='hidden' name="location" value={jobs[0].location} />
                                 <input type='hidden' name="experience" value={jobs[0].experience} />
                                 <input type='hidden' name="jobdescription" value={jobs[0].jobdescription} />
