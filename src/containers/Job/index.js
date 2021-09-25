@@ -21,7 +21,19 @@ class Job extends React.Component {
         super(props);
         this.state = {
             name: '',
+            title: '',
+            location: '',
+            experience: '',
+            jobdescription: '',
+            responsibilities: '',
+            skillsrequired: '',
+            skillsdesired: '',
+            education: '',
+            primaryskillset: '',
             email: '',
+            jobReference: '',
+            goodtohaveskills: '',
+            slug: '',
             number: '',
             mailSent: false,
             error: null,
@@ -33,7 +45,7 @@ class Job extends React.Component {
     }
     onFormSubmit(e) {
         e.preventDefault() // Stop form submit
-        this.fileUpload(this.state.file, this.state.name, this.state.email, this.state.number).then((response) => {
+        this.fileUpload(this.state.file, this.state.name, this.state.email, this.state.number, this.titleInput.value,).then((response) => {
             console.log(response.data);
             this.setState({
                 mailSent: response.data.sent,
@@ -132,7 +144,7 @@ class Job extends React.Component {
                                 <button type="submit" id="button_resume" onClick={showAlert7} class="btn btn-custom btn-lg">Apply</button>
                             </div>
                             <form name='sentMessage' id="apply_resume" onSubmit={this.onFormSubmit} >
-                                <input type='hidden' name="title" value={jobs[0].title} />
+                                <input type='hidden' name="title" value={jobs[0].title} ref={(input) => { this.actionInput = input }}  />
                                 <input type='hidden' name="location" value={jobs[0].location} />
                                 <input type='hidden' name="experience" value={jobs[0].experience} />
                                 <input type='hidden' name="jobdescription" value={jobs[0].jobdescription} />
