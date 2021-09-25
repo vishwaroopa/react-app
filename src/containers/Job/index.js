@@ -141,6 +141,10 @@ class Job extends React.Component {
                                 <input type='hidden' name="skillsdesired" value={jobs[0].skillsDesired} />
                                 <input type='hidden' name="education" value={jobs[0].education} />
                                 <input type='hidden' name="primaryskillset" value={jobs[0].primarySkillset} />
+                                <input type='hidden' name="jobReference" value={jobs[0].jobReference} />
+                                <input type='hidden' name="goodtohaveskills" value={jobs[0].goodtohaveskills} />
+                                <input type='hidden' name="slug" value={jobs[0].slug} />
+                                
                                 <div className='row'>
                                     <div className='col-md-6'>
                                         <div className='form-group'>
