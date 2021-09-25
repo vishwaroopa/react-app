@@ -45,7 +45,7 @@ class Job extends React.Component {
     }
     onFormSubmit(e) {
         e.preventDefault() // Stop form submit
-        this.fileUpload(this.state.file, this.state.name, this.state.email, this.state.number, this.titleInput.value,).then((response) => {
+        this.fileUpload(this.state.file, this.state.name, this.state.email, this.state.number, this.titleInput.value, this.locationInput.value, this.experienceInput.value, this.jobdescriptionInput.value, this.responsibilitiesInput.value, this.skillsrequiredInput.value, this.skillsdesiredInput.value, this.educationInput.value, this.primaryskillsetInput.value, this.jobReferenceInput.value, this.goodtohaveskillsInput.value, this.slugInput.value).then((response) => {
             console.log(response.data);
             this.setState({
                 mailSent: response.data.sent,
@@ -75,7 +75,7 @@ class Job extends React.Component {
     }
     //onSubmit of email form
 
-    fileUpload(file, name, email, number, title) {
+    fileUpload(file, name, email, number, title, location, experience, jobdescription, responsibilities, skillsrequired, skillsdesired, education, primaryskillset, jobReference, goodtohaveskills, slug) {
         const url = 'http://admin.mavininfotech.com/api/resume3.php';
         const formData = new FormData();
         formData.append('file', file)
@@ -83,6 +83,17 @@ class Job extends React.Component {
         formData.append('email', email)
         formData.append('number', number)
         formData.append('title', title)
+        formData.append('location', location)
+        formData.append('experience', experience)
+        formData.append('jobdescription', jobdescription)
+        formData.append('responsibilities', responsibilities)
+        formData.append('skillsrequired', skillsrequired)
+        formData.append('skillsdesired', skillsdesired)
+        formData.append('education', education)
+        formData.append('primaryskillset', primaryskillset)
+        formData.append('jobReference', jobReference)
+        formData.append('goodtohaveskills', goodtohaveskills)
+        formData.append('slug', slug)
         const config = {
             headers: {
                 'content-type': 'application/x-www-form-urlencoded'
@@ -146,17 +157,17 @@ class Job extends React.Component {
                             </div>
                             <form name='sentMessage' id="apply_resume" onSubmit={this.onFormSubmit} >
                                 <input type='hidden' name="title" value={jobs[0].title} ref={(input) => { this.titleInput = input }}  />
-                                <input type='hidden' name="location" value={jobs[0].location} />
-                                <input type='hidden' name="experience" value={jobs[0].experience} />
-                                <input type='hidden' name="jobdescription" value={jobs[0].jobdescription} />
-                                <input type='hidden' name="responsibilities" value={jobs[0].Responsibilities} />
-                                <input type='hidden' name="skillsrequired" value={jobs[0].skillsRequired} />
-                                <input type='hidden' name="skillsdesired" value={jobs[0].skillsDesired} />
-                                <input type='hidden' name="education" value={jobs[0].education} />
-                                <input type='hidden' name="primaryskillset" value={jobs[0].primarySkillset} />
-                                <input type='hidden' name="jobReference" value={jobs[0].jobReference} />
-                                <input type='hidden' name="goodtohaveskills" value={jobs[0].goodtohaveskills} />
-                                <input type='hidden' name="slug" value={jobs[0].slug} />
+                                <input type='hidden' name="location" value={jobs[0].location} ref={(input) => { this.locationInput = input }} />
+                                <input type='hidden' name="experience" value={jobs[0].experience} ref={(input) => { this.experienceInput = input }} />
+                                <input type='hidden' name="jobdescription" value={jobs[0].jobdescription} ref={(input) => { this.jobdescriptionInput = input }} />
+                                <input type='hidden' name="responsibilities" value={jobs[0].responsibilities} ref={(input) => { this.responsibilitiesInput = input }} />
+                                <input type='hidden' name="skillsrequired" value={jobs[0].skillsrequired} ref={(input) => { this.skillsrequiredInput = input }} />
+                                <input type='hidden' name="skillsdesired" value={jobs[0].skillsdesired} ref={(input) => { this.skillsdesiredInput = input }} />
+                                <input type='hidden' name="education" value={jobs[0].education} ref={(input) => { this.educationInput = input }} />
+                                <input type='hidden' name="primaryskillset" value={jobs[0].primaryskillset} ref={(input) => { this.primaryskillsetInput = input }} />
+                                <input type='hidden' name="jobReference" value={jobs[0].jobReference} ref={(input) => { this.jobReferenceInput = input }} />
+                                <input type='hidden' name="goodtohaveskills" value={jobs[0].goodtohaveskills} ref={(input) => { this.goodtohaveskillsInput = input }} />
+                                <input type='hidden' name="slug" value={jobs[0].slug} ref={(input) => { this.slugInput = input }} />
                                 
                                 <div className='row'>
                                     <div className='col-md-6'>
