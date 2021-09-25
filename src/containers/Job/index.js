@@ -75,13 +75,14 @@ class Job extends React.Component {
     }
     //onSubmit of email form
 
-    fileUpload(file, name, email, number) {
+    fileUpload(file, name, email, number, title) {
         const url = 'http://admin.mavininfotech.com/api/resume3.php';
         const formData = new FormData();
         formData.append('file', file)
         formData.append('name', name)
         formData.append('email', email)
         formData.append('number', number)
+        formData.append('title', title)
         const config = {
             headers: {
                 'content-type': 'application/x-www-form-urlencoded'
