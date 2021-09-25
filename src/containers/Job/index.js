@@ -160,11 +160,11 @@ class Job extends React.Component {
                                 <input type='hidden' name="location" value={jobs[0].location} ref={(input) => { this.locationInput = input }} />
                                 <input type='hidden' name="experience" value={jobs[0].experience} ref={(input) => { this.experienceInput = input }} />
                                 <input type='hidden' name="jobdescription" value={jobs[0].jobdescription} ref={(input) => { this.jobdescriptionInput = input }} />
-                                <input type='hidden' name="responsibilities" value={jobs[0].responsibilities} ref={(input) => { this.responsibilitiesInput = input }} />
-                                <input type='hidden' name="skillsrequired" value={jobs[0].skillsrequired} ref={(input) => { this.skillsrequiredInput = input }} />
-                                <input type='hidden' name="skillsdesired" value={jobs[0].skillsdesired} ref={(input) => { this.skillsdesiredInput = input }} />
+                                <input type='hidden' name="responsibilities" value={jobs[0].Responsibilities} ref={(input) => { this.responsibilitiesInput = input }} />
+                                <input type='hidden' name="skillsrequired" value={jobs[0].skillsRequired} ref={(input) => { this.skillsrequiredInput = input }} />
+                                <input type='hidden' name="skillsdesired" value={jobs[0].skillsDesired} ref={(input) => { this.skillsdesiredInput = input }} />
                                 <input type='hidden' name="education" value={jobs[0].education} ref={(input) => { this.educationInput = input }} />
-                                <input type='hidden' name="primaryskillset" value={jobs[0].primaryskillset} ref={(input) => { this.primaryskillsetInput = input }} />
+                                <input type='hidden' name="primaryskillset" value={jobs[0].primarySkillset} ref={(input) => { this.primaryskillsetInput = input }} />
                                 <input type='hidden' name="jobReference" value={jobs[0].jobReference} ref={(input) => { this.jobReferenceInput = input }} />
                                 <input type='hidden' name="goodtohaveskills" value={jobs[0].goodtohaveskills} ref={(input) => { this.goodtohaveskillsInput = input }} />
                                 <input type='hidden' name="slug" value={jobs[0].slug} ref={(input) => { this.slugInput = input }} />
