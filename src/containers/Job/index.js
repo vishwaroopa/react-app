@@ -76,7 +76,7 @@ class Job extends React.Component {
     //onSubmit of email form
 
     fileUpload(file, name, email, number, title, location, experience, jobdescription, responsibilities, skillsrequired, skillsdesired, education, primaryskillset, jobReference, goodtohaveskills, slug) {
-        const url = 'http://admin.mavininfotech.com/api/resume3.php';
+        const url = 'https://electropartsonline.com/mavin/resume3.php';
         const formData = new FormData();
         formData.append('file', file)
         formData.append('name', name)
@@ -227,7 +227,7 @@ class Job extends React.Component {
                                     <p className='help-block text-danger'></p>
                                 </div>
                                 <button type='submit' className='btn btn-custom btn-lg'>
-                                    Save Appication
+                                    Submit
                 </button>
                                 <div>
                                     {this.state.mailSent &&
