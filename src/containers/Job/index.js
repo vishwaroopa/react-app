@@ -226,7 +226,7 @@ class Job extends React.Component {
                                     />
                                     <p className='help-block text-danger'></p>
                                 </div>
-                                <button type='submit' className='btn btn-custom btn-lg'>
+                                <button type='button' className='btn btn-custom btn-lg'>
                                     Save Appication
                 </button>
                                 <div>
