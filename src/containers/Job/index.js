@@ -221,7 +221,7 @@ class Job extends React.Component {
                                         className='form-control'
                                         rows='4'
                                         placeholder='Upload Resume'
-                                        required
+                                        
                                         onChange={this.onChange}
                                     />
                                     <p className='help-block text-danger'></p>
