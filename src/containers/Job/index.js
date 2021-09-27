@@ -212,20 +212,23 @@ class Job extends React.Component {
                                             <p className='help-block text-danger'></p>
                                         </div>
                                     </div>
+                                    <div className='col-md-6'>
+                                        <div className='form-group'>
+                                            Upload Resume<input
+                                                type="file"
+                                                name='resume'
+                                                id='resume'
+                                                className='form-control'
+                                                rows='4'
+                                                placeholder='Upload Resume'
+                                                required
+                                                onChange={this.onChange}
+                                            />
+                                            <p className='help-block text-danger'></p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className='form-group'>
-                                    Upload Resume<input
-                                        type="file"
-                                        name='resume'
-                                        id='resume'
-                                        className='form-control'
-                                        rows='4'
-                                        placeholder='Upload Resume'
-                                        required
-                                        onChange={this.onChange}
-                                    />
-                                    <p className='help-block text-danger'></p>
-                                </div>
+                                
                                 <button type='submit' className='btn btn-custom btn-lg'>
                                     Submit
                 </button>
