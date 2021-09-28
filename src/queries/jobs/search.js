@@ -2,7 +2,7 @@ import gql from "graphql-tag";
 
 const SEARCH_QUERY = gql`
   query Job($slug: String!){
-    jobs(where: {slug: $slug}) {
+    jobs(where: {slug: $slug},sort:"id:desc") {
       id
       title
       location
