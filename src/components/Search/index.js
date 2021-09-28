@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Query from "../Query";
+import { Link } from "react-router-dom";
 import { Card, Input } from 'semantic-ui-react'
 export default function Posts() {
     const [APIData, setAPIData] = useState([])
