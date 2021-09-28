@@ -76,7 +76,7 @@ export default function Posts() {
 
                                         <div className='testimonial-content'>
 
-                                            <div className='testimonial-meta'> <h4>{item.jobtype} </h4></div>
+                                            <div className='testimonial-meta'> <h4>{item.company} </h4></div>
                                             <Link to={`/jobs/${item.slug}`} className="uk-link-reset">
                                                 <div className='testimonial-meta'> <h1>{item.title} - {item.jobReference} </h1></div>
                                             </Link>
