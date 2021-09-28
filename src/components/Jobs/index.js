@@ -2,6 +2,7 @@ import React from "react";
 import Query from "../Query";
 import { Link } from "react-router-dom";
 import JOBS_QUERY from "../../queries/jobs/jobs";
+import axios from 'axios';
 class Jobs extends React.Component {
     constructor(props) {
         super(props);
