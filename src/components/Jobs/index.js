@@ -1,125 +1,94 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import Query from "../Query";
 import { Link } from "react-router-dom";
-import JOBS_QUERY from "../../queries/jobs/jobs";
-import axios from 'axios';
-class Jobs extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            title: '',
-            skill: '',
-            mailSent: false,
-            error: null
-        };
-    }
-    // saves the user's name entered to state
-    titleChange = (event) => {
-        this.setState({ title: event.target.value })
-    }
-
-    // saves the user's email entered to state
-    skillChange = (event) => {
-        this.setState({ skill: event.target.value })
-    }
-    //onSubmit of email form
-    handleSubmit = (event) => {
-        event.preventDefault();
-
-        axios({
-            method: 'post',
-            url: 'https://admin.mavininfotech.com/api/contact.php',
-            headers: {
-                'content-type': 'application/x-www-form-urlencoded'
-            },
-            data: this.state
-        })
-            .then(result => {
-                console.log(result.data)
-                this.setState({
-                    mailSent: result.data.sent,
-                })
-                console.log(this.state)
+import { Card, Input } from 'semantic-ui-react'
+export default function Posts() {
+    const [APIData, setAPIData] = useState([])
+    const [filteredResults, setFilteredResults] = useState([]);
+    const [searchInput, setSearchInput] = useState('');
+    useEffect(() => {
+        axios.get('https://strapi-image-mavin.herokuapp.com/jobs')
+            .then((response) => {
+                setAPIData(response.data);
             })
-            .catch(error => this.setState({
-                error: error.message
-            }));
+    }, [])
+
+    const searchItems = (searchValue) => {
+        setSearchInput(searchValue)
+        if (searchInput !== '') {
+            const filteredData = APIData.filter((item) => {
+                return Object.values(item).join('').toLowerCase().includes(searchInput.toLowerCase())
+            })
+            setFilteredResults(filteredData)
+        }
+        else {
+            setFilteredResults(APIData)
+        }
     }
-    render() {
-        return (
-            <Query query={JOBS_QUERY} id={null}>
-                {({ data: { jobs } }) => {
-                    return (
-                        <div id='testimonials23'>
-                            <div className='container'>
-                                <form name='sentMessage' id="apply_resume" onSubmit={this.onFormSubmit} >
-                                    <div className='row'>
-                                        <div className='col-md-4'>
-                                            <div className='form-group'>
-                                                <input
-                                                    type='text'
-                                                    id='title'
-                                                    name='title'
-                                                    className='form-control'
-                                                    placeholder='Search by Job Title'
-                                                    required
-                                                    onChange={this.titleChange}
-                                                />
-                                                <p className='help-block text-danger'></p>
-                                            </div>
-                                        </div>
-                                        <div className='col-md-6'>
-                                            <div className='form-group'>
-                                                <input
-                                                    type='text'
-                                                    id='skill'
-                                                    name='skill'
-                                                    className='form-control'
-                                                    placeholder='Search by Skill Set'
-                                                    required
-                                                    onChange={this.skillChange}
-                                                />
-                                                <p className='help-block text-danger'></p>
-                                            </div>
-                                        </div>
-                                        <div className='col-md-6'>
-                                            <div className='form-group'>
-                                                <button type='submit' className='btn btn-custom btn-lg'>
-                                                    Find Jobs</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
 
-                                <div className='row'>
-                                    {jobs.map((job, i) => {
-
-                                        return (
-                                            <div className='col-md-4'>
-                                                <div className='testimonial'>
-
-                                                    <div className='testimonial-content'>
-
-                                                        <div className='testimonial-meta'> <h4>{job.company} </h4></div>
-                                                        <Link to={`/jobs/${job.slug}`} className="uk-link-reset">
-                                                            <div className='testimonial-meta'> <h1>{job.title} - {job.jobReference} </h1></div>
-                                                        </Link>
-                                                        <div className='testimonial-meta'> <h4>{job.location} </h4></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        );
-                                    })}
-
+    return (
+        <div id='testimonials234'>
+            <div className='container'>
+                <div className='row'>
+                    <div className='col-md-12 title_jobs'><h1>Jobs</h1></div></div>
+                <div className='row'>
+                    <div className='col-md-4'>&nbsp;</div>
+                    <div className='col-md-4'>
+                        <div className='form-group'>
+                            <div class="main">
+                                <div class="form-group has-search">
+                                    <span class="form-control-feedback"><i class="fa fa-search"></i></span>
+                                    <input type='text' className='search_input form-control'
+                                        placeholder='Search by Job Title or Location or skill set'
+                                        onChange={(e) => searchItems(e.target.value)}
+                                    />
                                 </div>
                             </div>
+
                         </div>
+                    </div>
+                    <div className='row'>
+                        <div className='col-md-4'>&nbsp;</div></div>
+                    {searchInput.length > 1 ? (
+                        filteredResults.map((item) => {
+                            return (
+                                <div className='col-md-4'>
+                                    <div className='testimonial'>
 
-                    );
-                }}
-            </Query>
-        )
-    }
+                                        <div className='testimonial-content'>
+
+                                            <div className='testimonial-meta'> <h4>{item.company} </h4></div>
+                                            <Link to={`/jobs/${item.slug}`} className="uk-link-reset">
+                                                <div className='testimonial-meta'> <h1>{item.title} - {item.jobReference} </h1></div>
+                                            </Link>
+                                            <div className='testimonial-meta'> <h4>{item.location} </h4></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    ) : (
+                        APIData.map((item) => {
+                            return (
+                                <div className='col-md-4'>
+                                    <div className='testimonial'>
+
+                                        <div className='testimonial-content'>
+
+                                            <div className='testimonial-meta'> <h4>{item.jobtype} </h4></div>
+                                            <Link to={`/jobs/${item.slug}`} className="uk-link-reset">
+                                                <div className='testimonial-meta'> <h1>{item.title} - {item.jobReference} </h1></div>
+                                            </Link>
+                                            <div className='testimonial-meta'> <h4>{item.location} </h4></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    )}
+                </div>
+            </div>
+        </div>
+    )
 }
-
-export default Jobs;
