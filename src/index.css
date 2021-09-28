@@ -771,7 +771,8 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
     content: "\f002";
 }
 .testimonial-meta h1 {
-    font-size: 21px!important;
+    font-size: 21px !important;
+    min-height: 72px;
 }
 #testimonials234 {
     margin-top: 100px;
