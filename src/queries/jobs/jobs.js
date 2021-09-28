@@ -2,7 +2,7 @@ import gql from "graphql-tag";
 
 const JOBS_QUERY = gql`
   query Jobs {
-    jobs {
+    jobs(sort:"id:desc") {
       title
       location
       experience
