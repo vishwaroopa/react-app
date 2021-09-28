@@ -7,9 +7,10 @@ const JOBS_QUERY = gql`
       location
       experience
 slug
-id
+
 jobReference
 company
+id
     }
   }
 `;
