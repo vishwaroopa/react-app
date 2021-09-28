@@ -38,7 +38,7 @@ export default function Posts() {
                         <div className='form-group'>
                             <div class="main">
   <div class="form-group has-search">
-                                    <span class="fa fa-search form-control-feedback"><i class="fa fa-search"></i></span>
+                                    <span class="form-control-feedback"><i class="fa fa-search"></i></span>
                                     <input type='text' className='search_input form-control'
                                         placeholder='Search by Job Title or Location or skill set'
                                         onChange={(e) => searchItems(e.target.value)}

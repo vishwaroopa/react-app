@@ -740,7 +740,7 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
 .search_input {
     position: relative;
     color: #787779;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 40px;
     padding-left: 35px;
     padding-right: 30px;
@@ -758,13 +758,14 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
 .has-search .form-control-feedback {
     position: absolute;
     z-index: 2;
+    left: 15px !important;
     display: block;
-    width: 2.375rem;
-    height: 2.375rem;
+    width: 2.8rem;
+    height: 2.8rem;
     line-height: 2.375rem;
     text-align: center;
     pointer-events: none;
-    color: #aaa;
+    color: #6279ec;
 }
 .fa-search:before {
     content: "\f002";
@@ -776,5 +777,6 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
     margin-top: 100px;
 }
 .title_jobs h1 {
-    text-align:center;
+    text-align: center;
+    margin: 0px 0 18px !important;
 }
