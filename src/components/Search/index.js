@@ -28,8 +28,10 @@ export default function Posts() {
     }
 
     return (
-        <div id='testimonials23'>
+        <div id='testimonials234'>
             <div className='container'>
+                <div className='row'>
+                    <div className='col-md-12 title_jobs'><h1>Jobs</h1></div></div>
                 <div className='row'>
                     <div className='col-md-4'>&nbsp;</div>
                         <div className='col-md-4'>
