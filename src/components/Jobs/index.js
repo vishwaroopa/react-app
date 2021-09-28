@@ -8,7 +8,7 @@ export default function Posts() {
     const [filteredResults, setFilteredResults] = useState([]);
     const [searchInput, setSearchInput] = useState('');
     useEffect(() => {
-        axios.get('https://strapi-image-mavin.herokuapp.com/jobs')
+        axios.get('https://strapi-image-mavin.herokuapp.com/jobs?_sort=id:DESC')
             .then((response) => {
                 setAPIData(response.data);
             })
