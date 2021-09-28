@@ -31,13 +31,13 @@ export default function Posts() {
         <div id='testimonials23'>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-md-4'></div>
+                    <div className='col-md-4'>&nbsp;</div>
                         <div className='col-md-4'>
                         <div className='form-group'>
                             <div class="main">
   <div class="form-group has-search">
                                     <span class="fa fa-search form-control-feedback"></span>
-                                    <Input icon='search' className='search_input form-control'
+                                    <input type='text' className='search_input form-control'
                                         placeholder='Search by Job Title or Location or skill set'
                                         onChange={(e) => searchItems(e.target.value)}
                                     />
@@ -45,8 +45,9 @@ export default function Posts() {
                                 </div>
                             
                             </div>
-                        </div>
-                    <div className='col-md-4'></div>
+                    </div>
+                    <div className='row'>
+                    <div className='col-md-4'>&nbsp;</div></div>
                        {searchInput.length > 1 ? (
                     filteredResults.map((item) => {
                         return (

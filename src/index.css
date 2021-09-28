@@ -750,12 +750,6 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
     -webkit-appearance: none;
     border-radius: 0;
 }
-.main {
-    width: 50%;
-    margin: 50px auto;
-}
-
-/* Bootstrap 4 text input with search icon */
 
 .has-search .form-control {
     padding-left: 2.375rem;
