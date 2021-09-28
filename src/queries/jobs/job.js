@@ -8,7 +8,7 @@ const JOB_QUERY = gql`
       location
 slug
 jobReference
-jobtype
+company
 experience
 jobdescription
 requiredskills

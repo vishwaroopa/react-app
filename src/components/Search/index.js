@@ -34,61 +34,61 @@ export default function Posts() {
                     <div className='col-md-12 title_jobs'><h1>Jobs</h1></div></div>
                 <div className='row'>
                     <div className='col-md-4'>&nbsp;</div>
-                        <div className='col-md-4'>
+                    <div className='col-md-4'>
                         <div className='form-group'>
                             <div class="main">
-  <div class="form-group has-search">
+                                <div class="form-group has-search">
                                     <span class="form-control-feedback"><i class="fa fa-search"></i></span>
                                     <input type='text' className='search_input form-control'
                                         placeholder='Search by Job Title or Location or skill set'
                                         onChange={(e) => searchItems(e.target.value)}
                                     />
-  </div>
                                 </div>
-                            
                             </div>
+
+                        </div>
                     </div>
                     <div className='row'>
-                    <div className='col-md-4'>&nbsp;</div></div>
-                       {searchInput.length > 1 ? (
-                    filteredResults.map((item) => {
-                        return (
-                            <div className='col-md-4'>
-                                <div className='testimonial'>
+                        <div className='col-md-4'>&nbsp;</div></div>
+                    {searchInput.length > 1 ? (
+                        filteredResults.map((item) => {
+                            return (
+                                <div className='col-md-4'>
+                                    <div className='testimonial'>
 
-                                    <div className='testimonial-content'>
+                                        <div className='testimonial-content'>
 
-                                        <div className='testimonial-meta'> <h4>{item.jobtype} </h4></div>
-                                        <Link to={`/jobs/${item.slug}`} className="uk-link-reset">
-                                            <div className='testimonial-meta'> <h1>{item.title} - {item.jobReference} </h1></div>
-                                        </Link>
-                                        <div className='testimonial-meta'> <h4>{item.location} </h4></div>
+                                            <div className='testimonial-meta'> <h4>{item.company} </h4></div>
+                                            <Link to={`/jobs/${item.slug}`} className="uk-link-reset">
+                                                <div className='testimonial-meta'> <h1>{item.title} - {item.jobReference} </h1></div>
+                                            </Link>
+                                            <div className='testimonial-meta'> <h4>{item.location} </h4></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        )
-                    })
-                ) : (
-                    APIData.map((item) => {
-                        return (
-                            <div className='col-md-4'>
-                                <div className='testimonial'>
+                            )
+                        })
+                    ) : (
+                        APIData.map((item) => {
+                            return (
+                                <div className='col-md-4'>
+                                    <div className='testimonial'>
 
-                                    <div className='testimonial-content'>
+                                        <div className='testimonial-content'>
 
-                                        <div className='testimonial-meta'> <h4>{item.jobtype} </h4></div>
-                                        <Link to={`/jobs/${item.slug}`} className="uk-link-reset">
-                                            <div className='testimonial-meta'> <h1>{item.title} - {item.jobReference} </h1></div>
-                                        </Link>
-                                        <div className='testimonial-meta'> <h4>{item.location} </h4></div>
+                                            <div className='testimonial-meta'> <h4>{item.jobtype} </h4></div>
+                                            <Link to={`/jobs/${item.slug}`} className="uk-link-reset">
+                                                <div className='testimonial-meta'> <h1>{item.title} - {item.jobReference} </h1></div>
+                                            </Link>
+                                            <div className='testimonial-meta'> <h4>{item.location} </h4></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        )
-                    })
-                )}
-        </div>
+                            )
+                        })
+                    )}
                 </div>
             </div>
+        </div>
     )
 }

@@ -9,7 +9,7 @@ const JOBS_QUERY = gql`
 slug
 id
 jobReference
-jobtype
+company
     }
   }
 `;

@@ -100,7 +100,7 @@ class Jobs extends React.Component {
 
                                                     <div className='testimonial-content'>
 
-                                                        <div className='testimonial-meta'> <h4>{job.jobtype} </h4></div>
+                                                        <div className='testimonial-meta'> <h4>{job.company} </h4></div>
                                                         <Link to={`/jobs/${job.slug}`} className="uk-link-reset">
                                                             <div className='testimonial-meta'> <h1>{job.title} - {job.jobReference} </h1></div>
                                                         </Link>
