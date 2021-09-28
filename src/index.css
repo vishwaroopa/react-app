@@ -780,3 +780,6 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
     text-align: center;
     margin: 0px 0 18px !important;
 }
+#button_resume {
+    margin-top: 14px;
+}
