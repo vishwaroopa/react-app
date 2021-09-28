@@ -26,40 +26,51 @@ export default function Posts() {
     }
 
     return (
-        <div style={{ padding: 20 }}>
+        <div id='testimonials23'>
+            <div className='container'>
+                <div className='row'>
             <Input icon='search'
                 placeholder='Search...'
                 onChange={(e) => searchItems(e.target.value)}
-            />
-            <Card.Group itemsPerRow={3} style={{ marginTop: 20 }}>
-                {searchInput.length > 1 ? (
+            />                {searchInput.length > 1 ? (
                     filteredResults.map((item) => {
                         return (
-                            <Card>
-                                <Card.Content>
-                                    <Card.Header>{item.title}</Card.Header>
-                                    <Card.Description>
-                                        {item.location}
-                                    </Card.Description>
-                                </Card.Content>
-                            </Card>
+                            <div className='col-md-4'>
+                                <div className='testimonial'>
+
+                                    <div className='testimonial-content'>
+
+                                        <div className='testimonial-meta'> <h4>{item.jobtype} </h4></div>
+                                        <Link to={`/jobs/${item.slug}`} className="uk-link-reset">
+                                            <div className='testimonial-meta'> <h1>{item.title} - {item.jobReference} </h1></div>
+                                        </Link>
+                                        <div className='testimonial-meta'> <h4>{item.location} </h4></div>
+                                    </div>
+                                </div>
+                            </div>
                         )
                     })
                 ) : (
                     APIData.map((item) => {
                         return (
-                            <Card>
-                                <Card.Content>
-                                    <Card.Header>{item.title}</Card.Header>
-                                    <Card.Description>
-                                        {item.location}
-                                    </Card.Description>
-                                </Card.Content>
-                            </Card>
+                            <div className='col-md-4'>
+                                <div className='testimonial'>
+
+                                    <div className='testimonial-content'>
+
+                                        <div className='testimonial-meta'> <h4>{item.jobtype} </h4></div>
+                                        <Link to={`/jobs/${item.slug}`} className="uk-link-reset">
+                                            <div className='testimonial-meta'> <h1>{item.title} - {item.jobReference} </h1></div>
+                                        </Link>
+                                        <div className='testimonial-meta'> <h4>{item.location} </h4></div>
+                                    </div>
+                                </div>
+                            </div>
                         )
                     })
                 )}
-            </Card.Group>
         </div>
+                </div>
+            </div>
     )
 }
