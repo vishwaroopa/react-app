@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { Switch, Route } from "react-router-dom";
 
 import Nav from "../../components/Nav";
+import Search from "../../components/Search";
 import  Services  from '../../components/Services'
 import Articles from "../Articles";
 import Article from "../Article";
@@ -38,6 +39,7 @@ function App() {
               <Route path="/menu/contact-us" component={Email} exact />
               <Route path="/content/contact-us" component={Email} exact />
               <Route path="/content/jobs" component={Jobs} exact />
+              <Route path="/content/search" component={Search} exact />
               <Route path="/content/submit-resume" component={Resumes} exact />
               <Route path="/content/:id" component={Article} exact />
               <Route path="/jobs/:id" component={Job} exact />
