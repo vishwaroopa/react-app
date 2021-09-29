@@ -108,17 +108,19 @@ class Job extends React.Component {
             <Query query={JOB_QUERY} slug={id}>
                 {({ data: { jobs } }) => {
                     const jobs_url = "/content/jobs";
-                    const price =  jobs[0].title;
-                    let comp;
-
-                    if (price) {
-
-                        comp = "yes";
-
+                    const title =  jobs[0].title;
+                    let title_1;
+                    if (title) {
+                        title_1 = "yes";
                     } else {
-
-                        comp = "no";
-
+                        title_1 = "no";
+                    }
+                    const experience = jobs[0].experience;
+                    let experience_1;
+                    if (experience) {
+                        experience_1 = "yes";
+                    } else {
+                        experience_1 = "no";
                     }
                     return (
                         <div className="uk-section container job_detail">
@@ -129,7 +131,7 @@ class Job extends React.Component {
                             <div className="container">
                                 <div class="recruit-job-job-ref">
                                     <div class="job-ref-label">Role:</div>
-                                    {jobs[0].title}  {comp}
+                                    {jobs[0].title}  
                                 </div>
                                 <div class="recruit-job-job-ref">
                                     <div class="job-ref-label">Location:</div>
@@ -137,7 +139,7 @@ class Job extends React.Component {
                                 </div>
                                 <div class="recruit-job-job-ref">
                                     <div class="job-ref-label">Experience:</div>
-                                    {jobs[0].experience}
+                                    {jobs[0].experience} {experience_1}
                                 </div>
                                 <div class="recruit-job-job-ref">
                                     <div class="job-ref-label">Job Description:</div>
