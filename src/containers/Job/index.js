@@ -137,7 +137,7 @@ class Job extends React.Component {
                                     <div class="job-ref-label">Location:</div>
                                     {jobs[0].location}
                                 </div>
-                                <div class="recruit-job-job-ref {experience_1}">
+                                <div class="recruit-job-job-ref" id={`${experience_1}`}>
                                     <div class="job-ref-label">Experience:</div>
                                     {jobs[0].experience} 
                                 </div>

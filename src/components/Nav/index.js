@@ -17,11 +17,7 @@ function showAlert1() {
 }
 function sayHello(test) {
     console.log(test);
-    if (test == "consulting") {
-        document.getElementById("bs-example-navbar-collapse-1").style.display = "none";
-        console.log("if-x");
-    }
-    else if (test == "contact-us") {
+ if (test == "contact-us") {
         document.getElementById("bs-example-navbar-collapse-1").style.display = "none";
         console.log("if-y");
     }
