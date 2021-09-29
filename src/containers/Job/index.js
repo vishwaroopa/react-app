@@ -122,6 +122,48 @@ class Job extends React.Component {
                     } else {
                         experience_1 = "no";
                     }
+                    const jobdescription = jobs[0].jobdescription;
+                    let jobdescription_1;
+                    if (jobdescription) {
+                        jobdescription_1 = "yes";
+                    } else {
+                        jobdescription_1 = "no";
+                    }
+                    const Responsibilities = jobs[0].Responsibilities;
+                    let Responsibilities_1;
+                    if (Responsibilities) {
+                        Responsibilities_1 = "yes";
+                    } else {
+                        Responsibilities_1 = "no";
+                    }
+                    const skillsRequired = jobs[0].skillsRequired;
+                    let skillsRequired_1;
+                    if (skillsRequired) {
+                        skillsRequired_1 = "yes";
+                    } else {
+                        skillsRequired_1 = "no";
+                    }
+                    const skillsDesired = jobs[0].skillsDesired;
+                    let skillsDesired_1;
+                    if (skillsDesired) {
+                        skillsDesired_1 = "yes";
+                    } else {
+                        skillsDesired_1 = "no";
+                    }
+                    const education = jobs[0].education;
+                    let education_1;
+                    if (education) {
+                        education_1 = "yes";
+                    } else {
+                        education_1 = "no";
+                    }
+                    const primarySkillset = jobs[0].primarySkillset;
+                    let primarySkillset_1;
+                    if (primarySkillset) {
+                        primarySkillset_1 = "yes";
+                    } else {
+                        primarySkillset_1 = "no";
+                    }
                     return (
                         <div className="uk-section container job_detail">
                             <h1><span>{jobs[0].title}</span><span class="title_right"> <Link
@@ -141,27 +183,27 @@ class Job extends React.Component {
                                     <div class="job-ref-label">Experience:</div>
                                     {jobs[0].experience} 
                                 </div>
-                                <div class="recruit-job-job-ref">
+                                <div class="recruit-job-job-ref" id={`${jobdescription_1}`}>
                                     <div class="job-ref-label">Job Description:</div>
                                     <ReactMarkdown source={jobs[0].jobdescription} />
                                 </div>
-                                <div class="recruit-job-job-ref">
+                                <div class="recruit-job-job-ref" id={`${Responsibilities_1}`}>
                                     <div class="job-ref-label">Responsibilities:</div>
                                     <ReactMarkdown source={jobs[0].Responsibilities} />
                                 </div>
-                                <div class="recruit-job-job-ref">
+                                <div class="recruit-job-job-ref" id={`${skillsRequired_1}`}>
                                     <div class="job-ref-label">Skills Required:</div>
                                     <ReactMarkdown source={jobs[0].skillsRequired} />
                                 </div>
-                                <div class="recruit-job-job-ref">
+                                <div class="recruit-job-job-ref" id={`${skillsDesired_1}`}>
                                     <div class="job-ref-label">Skill Desired:</div>
                                     <ReactMarkdown source={jobs[0].skillsDesired} />
                                 </div>
-                                <div class="recruit-job-job-ref">
+                                <div class="recruit-job-job-ref" id={`${education_1}`}>
                                     <div class="job-ref-label">Education:</div>
                                     {jobs[0].education}
                                 </div>
-                                <div class="recruit-job-job-ref">
+                                <div class="recruit-job-job-ref" id={`${primarySkillset_1}`}>
                                     <div class="job-ref-label">Primary Skill Set:</div>
                                     {jobs[0].primarySkillset}
                                 </div>
