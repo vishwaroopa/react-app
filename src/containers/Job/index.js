@@ -108,6 +108,18 @@ class Job extends React.Component {
             <Query query={JOB_QUERY} slug={id}>
                 {({ data: { jobs } }) => {
                     const jobs_url = "/content/jobs";
+                    const price =  jobs[0].title;
+                    let comp;
+
+                    if (price) {
+
+                        comp = "yes";
+
+                    } else {
+
+                        comp = "no";
+
+                    }
                     return (
                         <div className="uk-section container job_detail">
                             <h1><span>{jobs[0].title}</span><span class="title_right"> <Link
@@ -117,7 +129,7 @@ class Job extends React.Component {
                             <div className="container">
                                 <div class="recruit-job-job-ref">
                                     <div class="job-ref-label">Role:</div>
-                                    {jobs[0].title}
+                                    {jobs[0].title}  {comp}
                                 </div>
                                 <div class="recruit-job-job-ref">
                                     <div class="job-ref-label">Location:</div>
