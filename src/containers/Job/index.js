@@ -290,7 +290,7 @@ class Job extends React.Component {
                 </button>
                                 <div>
                                     {this.state.mailSent &&
-                                        <div id='success'>Thank you for submitting resume with us. We will check and get back to you soon..</div>
+                                        <div id='success'>Thank you for submitting resume. Our team will be reaching out to you shortly...</div>
                                     }
                                 </div>
                             </form>
