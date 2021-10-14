@@ -39,7 +39,7 @@ class Email extends React.Component {
 
         axios({
             method: 'post',
-            url: 'https://admin.mavininfotech.com/api/contact.php',
+            url: 'https://www.electropartsonline.com/mavin/contact.php',
             headers: {
                 'content-type': 'application/x-www-form-urlencoded'
             },

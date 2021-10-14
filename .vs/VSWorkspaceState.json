@@ -3,13 +3,13 @@
     "",
     "\\src",
     "\\src\\components",
+    "\\src\\components\\Jobs",
     "\\src\\components\\Nav",
-    "\\src\\containers",
-    "\\src\\containers\\Job",
     "\\src\\queries",
-    "\\src\\queries\\jobs",
-    "\\src\\queries\\projects",
-    "\\src\\queries\\sliders"
+    "\\src\\queries\\article",
+    "\\src\\queries\\category",
+    "\\src\\queries\\clients",
+    "\\src\\queries\\global"
   ],
   "SelectedNode": "\\src\\components\\Jobs\\index.js",
   "PreviewInSolutionExplorer": false
