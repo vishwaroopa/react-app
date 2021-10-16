@@ -57,7 +57,7 @@ class Resumes extends React.Component {
     //onSubmit of email form
 
     fileUpload(file, name, feedback, name2, email, number) {
-        const url = 'https://admin.mavininfotech.com/api/resume.php';
+        const url = 'https://electropartsonline.com/mavin/resume.php';
         const formData = new FormData();
         formData.append('file', file)
         formData.append('name', name)
