@@ -8,9 +8,28 @@ export default function Posts() {
     const [filteredResults, setFilteredResults] = useState([]);
     const [searchInput, setSearchInput] = useState('');
     useEffect(() => {
-        axios.get('https://strapi-image-mavin.herokuapp.com/jobs?_sort=id:DESC')
-            .then((response) => {
-                setAPIData(response.data);
+        axios({
+            url: 'https://strapi-image-mavin.herokuapp.com/graphql',
+                method: 'post',
+                    data: {
+                query: `
+      query Jobs {
+    jobs(sort:"id:desc") {
+      title
+      location
+      experience
+slug
+
+jobReference
+company
+id
+    }
+  }
+      `
+            }
+        }).then((response) => {
+            setAPIData(response.data.data.jobs);
+            console.log(response.data.data.jobs);
             })
     }, [])
 
