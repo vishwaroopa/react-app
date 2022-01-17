@@ -81,7 +81,7 @@ class Job extends React.Component {
     //onSubmit of email form
 
     fileUpload(file, name, email, number, title, location, experience, jobdescription, responsibilities, skillsrequired, skillsdesired, education, primaryskillset, jobReference, goodtohaveskills, slug) {
-        const url = 'https://electropartsonline.com/mavin/resume3.php';
+        const url = 'https://admin.mavininfotech.com/resume3.php';
         const formData = new FormData();
         formData.append('file', file)
         formData.append('name', name)
