@@ -45,11 +45,16 @@ class Job extends React.Component {
     }
     onFormSubmit(e) {
         e.preventDefault() // Stop form submit
+        document.getElementById("mySubmit").disabled = true;
+        var btn = document.getElementById("mySubmit");
+        btn.innerHTML = 'Submitting...';
         this.fileUpload(this.state.file, this.state.name, this.state.email, this.state.number, this.titleInput.value, this.locationInput.value, this.experienceInput.value, this.jobdescriptionInput.value, this.responsibilitiesInput.value, this.skillsrequiredInput.value, this.skillsdesiredInput.value, this.educationInput.value, this.primaryskillsetInput.value, this.jobReferenceInput.value, this.goodtohaveskillsInput.value, this.slugInput.value).then((response) => {
             console.log(response.data);
             this.setState({
                 mailSent: response.data.sent,
             })
+            var btn = document.getElementById("mySubmit");
+            btn.innerHTML = 'Submit';
         })
     }
     // saves the user's name entered to state
@@ -285,7 +290,7 @@ class Job extends React.Component {
                                     </div>
                                 </div>
                                 
-                                <button type='submit' className='btn btn-custom btn-lg'>
+                                <button type='submit' className='btn btn-custom btn-lg' id='mySubmit'>
                                     Submit
                 </button>
                                 <div>
