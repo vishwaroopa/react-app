@@ -15,8 +15,7 @@ import Sliders from '../../components/Header'
 import  Features  from '../../components/Features'
 import  About  from '../../components/About'
 import Projects from '../../components/Gallery'
-import Banner from '../../components/Banner'
-import Banner1 from '../../components/Banner1'
+
 import Testimonials from '../../components/Testimonials'
 import Jobs from '../../components/Jobs'
 import Footer  from '../../components/Footer'
@@ -30,7 +29,7 @@ function App() {
           <Nav />
           <Route path="/" component={Sliders} exact />
           <Route path="/" component={Features} exact />
-          <Route path="/" component={Banner} exact />
+         
           <Route path="/" component={About} exact />
           <Route path="/" component={Projects} exact />
           <Route path="/" component={Services} exact />
