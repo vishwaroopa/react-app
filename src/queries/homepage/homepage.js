@@ -19,19 +19,7 @@ id
 title
 description
 }
-banner1 {
-title
-image {
-url
-}
-}
-contactbanner {
-text
-image {
-url
-}
-}
-    }
+   }
   }
 `;
 
