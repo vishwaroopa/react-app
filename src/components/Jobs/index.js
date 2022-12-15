@@ -9,7 +9,7 @@ export default function Posts() {
     const [searchInput, setSearchInput] = useState('');
     useEffect(() => {
         axios({
-            url: 'https://strapi-image-mavin.herokuapp.com/graphql',
+            url: 'https://react.mavininfotech.com/graphql',
                 method: 'post',
                     data: {
                 query: `
