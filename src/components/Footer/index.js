@@ -46,21 +46,7 @@ const Footer = () => {
                                </span>
                             </p>
                         </div>
-                        <div className='contact-item' style='display:none'>
-                            <p>
-                                <span>
-                                    <i className='fa fa-phone'></i> {global.Footer.number}<br/>
-
-                </span>
-                            </p>
-                        </div>
-                        <div className='contact-item' style='display:none'>
-                            <p>
-                                <span>
-                                    <i className='fa fa-fax'></i> {global.Footer.number1}<br />
-                </span>
-                            </p>
-                        </div>
+                        
                         <div className='contact-item'>
                             <p>
                                 <span>
