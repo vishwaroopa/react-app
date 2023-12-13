@@ -151,21 +151,7 @@ class Email extends React.Component {
                                     </span>
                                 </p>
                             </div>
-                            <div className='contact-item'>
-                                <p>
-                                    <span>
-                                        <i className='fa fa-phone'></i> +91-40-40056734<br />
-
-                                    </span>
-                                </p>
-                            </div>
-                            <div className='contact-item'>
-                                <p>
-                                    <span>
-                                        <i className='fa fa-fax'></i> +91-40-40056734<br />
-                                    </span>
-                                </p>
-                            </div>
+                          
                             <div className='contact-item'>
                                 <p>
                                     <span>
