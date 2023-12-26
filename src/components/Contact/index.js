@@ -36,6 +36,9 @@ class Email extends React.Component {
     //onSubmit of email form
     handleSubmit = (event) => {
         event.preventDefault();
+         document.getElementById("mySubmit").disabled = true;
+        var btn = document.getElementById("mySubmit");
+        btn.innerHTML = 'Submitting...';
 const formData = new URLSearchParams();
 for (const key in this.state) {
     formData.append(key, this.state[key]);
@@ -54,6 +57,8 @@ for (const key in this.state) {
                     mailSent: result.data.sent,
                 })
                 console.log(this.state)
+                var btn = document.getElementById("mySubmit");
+            btn.innerHTML = 'Send Message';
             })
             .catch(error => this.setState({
                 error: error.message
@@ -134,7 +139,7 @@ for (const key in this.state) {
                                         ></textarea>
                                         <p className='help-block text-danger'></p>
                                     </div>
-                                    <button type='submit' className='btn btn-custom btn-lg'>
+                                    <button type='submit' id="mySubmit"  className='btn btn-custom btn-lg'>
                                         Send Message
                 </button> <div>
                                         {this.state.mailSent &&
