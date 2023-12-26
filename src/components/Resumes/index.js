@@ -21,11 +21,16 @@ class Resumes extends React.Component {
     }
     onFormSubmit(e) {
         e.preventDefault() // Stop form submit
+        document.getElementById("mySubmit").disabled = true;
+        var btn = document.getElementById("mySubmit");
+        btn.innerHTML = 'Submitting...';
         this.fileUpload(this.state.file, this.state.name, this.state.feedback, this.state.name2, this.state.email, this.state.number).then((response) => {
             console.log(response.data);
             this.setState({
-                mailSent: response.data.sent,
+                mailSent: response.data,
             })
+            var btn = document.getElementById("mySubmit");
+            btn.innerHTML = 'Save Appication';
         })
     }
     // saves the user's name entered to state
@@ -169,7 +174,7 @@ class Resumes extends React.Component {
                                         />
                                         <p className='help-block text-danger'></p>
                                     </div>
-                                    <button type='submit' className='btn btn-custom btn-lg'>
+                                    <button type='submit' id='mySubmit' className='btn btn-custom btn-lg'>
                                         Save Appication
                 </button>
                                     <div>
