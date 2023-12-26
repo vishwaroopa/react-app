@@ -36,14 +36,17 @@ class Email extends React.Component {
     //onSubmit of email form
     handleSubmit = (event) => {
         event.preventDefault();
-
+const formData = new URLSearchParams();
+for (const key in this.state) {
+    formData.append(key, this.state[key]);
+}
         axios({
             method: 'post',
             url: 'https://backyard.laautospot.com/mavin/contact.php',
             headers: {
                 'content-type': 'application/x-www-form-urlencoded'
             },
-            data: this.state
+            data: formData
         })
             .then(result => {
                 console.log(result.data)
