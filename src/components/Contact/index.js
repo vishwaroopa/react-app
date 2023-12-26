@@ -54,7 +54,7 @@ for (const key in this.state) {
             .then(result => {
                 console.log(result.data)
                 this.setState({
-                    mailSent: result.data.sent,
+                    mailSent: result.data,
                 })
                 console.log(this.state)
                 var btn = document.getElementById("mySubmit");
