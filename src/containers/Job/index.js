@@ -51,7 +51,7 @@ class Job extends React.Component {
         this.fileUpload(this.state.file, this.state.name, this.state.email, this.state.number, this.titleInput.value, this.locationInput.value, this.experienceInput.value, this.jobdescriptionInput.value, this.responsibilitiesInput.value, this.skillsrequiredInput.value, this.skillsdesiredInput.value, this.educationInput.value, this.primaryskillsetInput.value, this.jobReferenceInput.value, this.goodtohaveskillsInput.value, this.slugInput.value).then((response) => {
             console.log(response.data);
             this.setState({
-                mailSent: response.data.sent,
+                mailSent: response.data,
             })
             var btn = document.getElementById("mySubmit");
             btn.innerHTML = 'Submit';
