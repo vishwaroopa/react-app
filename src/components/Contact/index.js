@@ -242,7 +242,7 @@ for (const key in this.state) {
                             <div className='contact-item'>
                                 <p>
                                     <span>
-                                        <i className='fa fa-envelope-o'></i>  augustine@mavininfotech.com
+                                        <i className='fa fa-envelope-o'></i>  augustine@mavininfotech.com<br /><br />
                                     </span>
                                 </p>
                             </div>
