@@ -246,14 +246,7 @@ for (const key in this.state) {
                                     </span>
                                 </p>
                             </div>
-                            <div className='contact-item'>
-                                <p>
-                                    <span>
-                                        <i className='fa fa-envelope-o'></i> jessica@mavininfotech.com
-                                    </span>
-                                </p>
-                                <br />
-                            </div>
+                            
                            
                         </div>
                     </div>
