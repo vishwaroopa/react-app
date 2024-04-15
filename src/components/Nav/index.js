@@ -7,7 +7,7 @@ import Articles from "../../components/Articles";
 import CATEGORY_ARTICLES_QUERY from "../../queries/category/articles";
 import CATEGORIES_QUERY from "../../queries/category/categories";
 import GLOBAL_QUERY from "../../queries/global/global";
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo (3).png';
 function showAlert() {
     document.getElementById("bs-example-navbar-collapse-1").style.display = "none";
 }
