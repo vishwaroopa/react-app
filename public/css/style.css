@@ -7,6 +7,18 @@ body, html {
 	width: 100% !important;
 	height: 100% !important;
 }
+.navbar-header a img {
+	max-width:120px;
+}
+#menu {
+	padding:0px!important;
+}
+#contact .section-title a img {
+	max-width:120px;
+}
+.navbar-right {
+        padding: 30px;
+}
 h2, h3, h4 {
 	font-family: 'Raleway', sans-serif;
 }
