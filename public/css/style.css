@@ -11,13 +11,14 @@ body, html {
 	max-width:120px;
 }
 #menu {
-	padding:0px!important;
+	padding:7px!important;
 }
 #contact .section-title a img {
 	max-width:120px;
+ 	margin: 10px 9px 10px 0px;
 }
 .navbar-right {
-        padding: 30px;
+        padding: 14px;
 }
 h2, h3, h4 {
 	font-family: 'Raleway', sans-serif;
