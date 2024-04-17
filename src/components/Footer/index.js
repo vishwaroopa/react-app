@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { Link } from "react-router-dom";
 import logo from '../../assets/logo.png';
 import Query from "../Query";
+import logo1 from '../../assets/mavin-logo (1).png';
 import GLOBAL_QUERY from "../../queries/global/global";
 //import emailjs from 'emailjs-com'
 
@@ -26,7 +27,7 @@ const Footer = () => {
                     <div className='col-md-6'>
                         <div className='row'>
                             <div className='section-title'>
-                                <Link to="/"><img src={imageUrl} alt="logo" /></Link>
+                                <Link to="/"><img src={logo1} alt="logo" /></Link>
                                 <p>
                                     {global.Footer.content}
 
